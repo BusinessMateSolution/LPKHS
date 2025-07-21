@@ -1,0 +1,976 @@
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+</head>
+<body class="3mtJtoAx70UA.bd">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>পৌর কল্যাণ উচ্চ বিদ্যালয়</title>
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta name="description" content="">
+
+    <!-- =============== tt canonical End =============================== -->
+
+    <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/base.css">
+    <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/skeleton.css">
+    <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/style.css">
+    <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/meganizr.css">
+    <link type="text/css" rel="stylesheet" media="all" href="npfadmin/public/css/flaticon/flaticon.css">
+    <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/templates/ministry/style.css">
+
+
+
+
+    <link rel="stylesheet" href="themes/responsive_npf/stylesheets/responsiveslides.css">
+
+    <link rel="stylesheet" href="themes/responsive_npf/templates/ministry/responsive.css">
+    <link rel="stylesheet" href="themes/responsive_npf/templates/ministry/accessibility.css">
+    <script src="themes/responsive_npf/js/responsiveslides.min.js"></script>
+    <script src="themes/responsive_npf/js/jquery.vticker.js" type="text/javascript"></script>
+
+    <script src="themes/responsive_npf/js/domain_selector.js" type="text/javascript"></script>
+    <script src="themes/responsive_npf/js/utils.js" type="text/javascript"></script>
+    <script type="text/javascript" src="themes/responsive_npf/js/yoxview/yoxview-init.js"></script>
+
+
+
+
+
+
+    <div class="container">
+
+
+        <style>
+            .logo img {
+                height: 70px;
+                margin-right: 15px;
+                border-radius: 50%;
+                background-color: white;
+                padding: 5px;
+            }
+        </style>
+        <style>
+            .founded {
+                position: absolute;
+                /* top: 50px;*/
+                right: 2px;
+                /*  background-color: white;*/
+                /* background: rgba(0,0,0,0.5);*/
+                padding: 8px 15px;
+                border-radius: 10px;
+                font-size: 0.9rem;
+            }
+        </style>
+
+        <div id="site-info" class="clearfix">
+            <div class="site-info-container">
+                <div id="sitelogo">
+                    <div class="logo">
+                        <img src="images/PKHS-Logo.jpg" alt="পৌর কল্যাণ উচ্চ বিদ্যালয় লোগো">
+                    </div>
+                </div>
+                <div class="clearfix" id="sitename-wrapper">
+                    <span id="site-name"><a title="Home" href="/">পৌর কল্যাণ উচ্চ বিদ্যালয়</a></span>
+                    <span id="slogan">জ্ঞানের আলোয় আলোকিত জীবন গড়ি</span>
+                    <span class="founded">প্রতিষ্ঠা: ১৯৪০ সাল</span>
+                </div>
+            </div>
+        </div>
+        <style>
+            /* Base styles */
+            #site-info {
+                background: linear-gradient(90deg, #1a5fb4, #2ec27e);
+                padding: 15px 0;
+                color: white;
+            }
+
+            .site-info-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                padding: 0 15px;
+            }
+
+            #sitelogo {
+                flex: 0 0 auto;
+            }
+
+            .logo img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 50%;
+                border: 3px solid white;
+            }
+
+            #sitename-wrapper {
+                flex: 1;
+                min-width: 250px;
+                text-align: center;
+            }
+
+            #site-name {
+                display: block;
+                font-size: 4rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+                #site-name a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+            #slogan {
+                display: block;
+                font-size: 1.2rem;
+                font-style: italic;
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .site-info-container {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                #site-name {
+                    font-size: 1.5rem;
+                }
+
+                #slogan {
+                    font-size: 1rem;
+                }
+
+                .logo img {
+                    max-width: 80px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                #site-name {
+                    font-size: 1.2rem;
+                }
+
+                #slogan {
+                    font-size: 0.9rem;
+                }
+            }
+        </style>
+
+        <!-- /header-site-info-inner -->
+        ﻿<script>
+             /* Responsive Design*/
+             $(document).ready(function () {
+                 var wi = $(window).width();
+                 if (wi < 980) {
+
+                     $('#jmenu .show-menu').click(function () {
+                         //$('.mzr-responsive').show();
+                         $(".mzr-responsive").slideToggle(400, "linear", function () {
+
+                         });
+                     });
+
+                     $("#jmenu a.submenu").click(function () {
+
+                         $('#jmenu a.submenu').siblings().addClass('sibling-toggle');
+                         $(this).parent().find(".mzr-content").removeClass('sibling-toggle').addClass('slide-visible').slideToggle(400, "linear", function () {
+                             return false;
+                         });
+                         // return false;
+                     });
+                 }
+
+                 $('.submenu').addClass('sub-menu');
+                 $('.mzr-drop').addClass('focusin-drop');
+                 $('.mzr-drop').addClass('focusClassDrop');
+             });
+
+        </script>
+
+
+        <div class="sixteen columns" id="jmenu">
+            <div class="sixteen columns menu">
+
+                <a href="javascript:;" class="show-menu menu-head"> মেনু নির্বাচন করুন</a>
+                <div role="navigation" id="dawgdrops">
+                    <ul class="meganizr mzr-slide mzr-responsive">
+
+                        <li class="col0 "><a title="Home" href="/" style="background-image: url(themes/responsive_npf/img/home_dark.png);margin-top:5px;"></a></li>
+                        <li><i class="class=" col0"></i><a href="index.html" class="active">হোম</a></li>
+                        <li><a href="about.html">প্রতিষ্ঠান পরিচিতি</a></li>
+                        <li><a href="admission.html">অনুমতি ও স্বীকৃতি</a></li>
+                        <li><a href="students.html">শিক্ষার্থীর তথ্য</a></li>
+                        <li><a href="academics.html">  শিক্ষা কার্যক্রম</a></li>
+                        <li><a href="teacher.html"> শিক্ষকবৃন্দ</a></li>
+                        <li><a href="staff.html">কর্মকর্তা-কর্মচারী</a></li>
+                        <li><a href="management.html">ব্যবস্থাপনা কমিটি</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <style>
+
+            .np {
+                display: block;
+                float: left;
+                color: #fff !important;
+                padding-left: 5px;
+            }
+
+            #printable_area .viewer {
+                display: none
+            }
+
+            @media only screen and (max-width: 800px) and (min-width: 640px) {
+                .mainwrapper .box img {
+                    width: 30%
+                }
+
+                .mzr-content {
+                    position: relative;
+                }
+            }
+
+            .service-box h4 {
+                font-weight: normal !important;
+                font-size: 20px;
+            }
+
+            #notice-board-ticker .btn, #news-ticker .btn {
+                color: #fff;
+            }
+
+
+            @media screen and (max-width: 479px) {
+                .notice-board-bg {
+                    padding: 0px 0px 20px 10px;
+                }
+
+                ul li a {
+                    font-size: 16px !important;
+                }
+
+                .dynamic_serivce_box box {
+                }
+            }
+
+            .topbar {
+                background-color: #683091;
+                box-shadow: 0 1px 5px #999999;
+                margin-bottom: 10px;
+                padding: 3px;
+            }
+
+
+            #lang_form button {
+                background-color: mediumpurple;
+                color: #fff;
+                text-shadow: none;
+            }
+
+            #jmenu {
+                border-bottom: 1px solid darkgray;
+                box-shadow: 0px 2px 1px darkgrey;
+            }
+
+            #contents {
+                margin: 35px 0 !important;
+            }
+
+            .inner-page #contents {
+                margin: 0 !important;
+            }
+
+            /* #site-name {
+                font-size: 80px;
+                margin-left: -100px;
+                margin-top: -30px;
+            }
+
+            #slogan {
+                display: block;
+                margin-left: 312px;
+                margin-top: -30px;
+            }*/
+
+            #sitelogo {
+                width: 20%;
+                float: left
+            }
+
+            #sitename-wrapper {
+                width: 80%;
+                float: right;
+                line-height: 2
+            }
+
+            @media screen and (max-width: 479px) {
+                #notice-board-ticker li {
+                    background: url("themes/responsive_npf/images/bullet_tick.png") no-repeat 0px 5px transparent;
+                    font-size: 11px;
+                }
+
+                .dynamic_serivce_box .box {
+                    padding: 0 !important;
+                }
+
+                .notice-board-bg {
+                    background-size: 55px;
+                }
+
+
+                #notice-board {
+                    height: 186px;
+                }
+
+                #news {
+                    height: 35px;
+                }
+
+                #news-ticker {
+                    height: 37px !important;
+                }
+
+                #news .btn {
+                    bottom: -18px;
+                    position: relative;
+                }
+
+                #news h5 {
+                    font-size: 12px;
+                }
+
+                #news-ticker ul a {
+                    font-size: 11px;
+                }
+
+                #notice-board {
+                    width: 299px;
+                }
+
+                #news {
+                    width: 279px;
+                }
+
+                .container .six.columns {
+                    width: 279px !important;
+                }
+
+                .mainwrapper .box .caption {
+                    font-size: 10px;
+                    padding-left: 10px;
+                }
+
+                #notice-board-ticker ul {
+                    margin-bottom: 0px !important;
+                }
+            }
+
+
+
+            @media screen and (max-width: 479px) {
+                #sitelogo img {
+                    display: block;
+                    width: 60px;
+                    height: auto;
+                }
+
+                #site-name-wrapper {
+                    float: right;
+                    left: 21px;
+                    position: relative;
+                    top: -61px;
+                }
+
+                #logo {
+                    display: block;
+                    position: relative;
+                    left: -16px;
+                    top: -24px;
+                }
+            }
+
+            #site-info {
+                clear: both;
+                padding: 10px 0 10px 5px;
+                background-color: #683091;
+            }
+
+                #site-info a, #site-info span {
+                    text-shadow: none !important;
+                }
+
+            #header-site-info {
+                margin-bottom: 0;
+                padding: 10px;
+                z-index: 100;
+                position: relative;
+            }
+
+            @media only screen and (max-width: 979px) and (min-width: 320px) #header-site-info {
+                height: auto;
+            }
+
+
+            @media screen and (max-width: 479px) {
+                #div-lang-sel {
+                    width: 14%
+                }
+
+                .drop-one-columns {
+                    width: 300px !important;
+                }
+
+                #notice-board {
+                    margin-top: -25px;
+                    height: auto;
+                }
+
+                .row {
+                    margin-bottom: 0px;
+                }
+
+                .six.columns {
+                    margin-bottom: 10px;
+                }
+
+                .mainwrapper .box img {
+                    width: 80px;
+                }
+
+                #news-ticker ul {
+                    width: 86% !important;
+                }
+            }
+
+            .hide {
+                display: none
+            }
+
+            li.col1 .drop-four-columns, li.col2 .drop-four-columns, li.col3 .drop-four-columns, li.col4 .drop-four-columns, li.col5 .drop-four-columns, li.col6 .drop-four-columns, li.col7 .drop-four-columns,
+            li.col1 .drop-three-columns, li.col2 .drop-three-columns, li.col3 .drop-three-columns, li.col4 .drop-three-columns, li.col5 .drop-three-columns, li.col6 .drop-three-columns, li.col7 .drop-three-columns {
+                margin-left: 0
+            }
+
+            @media only screen and (max-width: 767px) {
+                .container .sixteen.columns, .container .twelve.columns {
+                    width: 100% !important
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .container {
+                    width: 95%;
+                }
+            }
+
+            @media screen and (max-width: 479px) {
+                .container .six.columns {
+                    width: 100% !important;
+                }
+            }
+
+            .service-box {
+                float: left !important
+            }
+
+            #right-content {
+                width: 100%
+            }
+
+            #notice-board, #news {
+                width: 100%;
+            }
+
+            #news {
+                height: 70px;
+            }
+
+                #news .btn {
+                    margin-right: 20px;
+                    color: #fff;
+                }
+
+            .service-box h4 {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 767px) and (min-width: 480px) {
+                .container .six.columns {
+                    width: 45% !important;
+                    margin-right: 8px;
+                }
+            }
+
+            /*  .right-side-bar .block ul li {
+                border-bottom: 1px solid transparent;
+                border-image: linear-gradient(to right,#683091 0%, #8bc643 100%);
+                border-image-slice: 1
+            }*/
+            .right-side-bar .block ul li {
+                border-bottom: 1px solid transparent;
+                border-image: linear-gradient(to right,#683091 0%, #8bc643 100%);
+                border-image-slice: 1
+            }
+
+                .right-side-bar .block ul li a {
+                    /*    border-bottom: 1px solid transparent;
+                    border-image: linear-gradient(to right,#683091 0%, #8bc643 100%);
+                    border-image-slice: 1*/
+                    font-size: 14px !important
+                }
+
+            #portal_navigation #navigation {
+                background-image: url('/themes/responsive_npf/images/portal_navigation.png') !important;
+            }
+        </style>
+
+        <script>
+            $(document).ready(function () {
+
+                $("#navigation").click(function () {
+                    $("#portal_navigation .portals").toggle();
+                });
+            });
+        </script>
+
+
+        <style>
+
+            @media (max-width: 760px) {
+                .responsive-school-img {
+                    max-width: 100%;
+                }
+            }
+
+
+
+
+
+
+            .card {
+                background: white;
+                border-radius: 10px;
+                box-shadow: var(--shadow);
+                padding: 25px;
+                margin-bottom: 30px;
+                transition: transform 0.3s ease;
+            }
+
+                .card:hover {
+                    transform: translateY(-5px);
+                }
+
+                .card h3 {
+                    color: var(--primary);
+                    margin-bottom: 15px;
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid var(--light);
+                }
+
+            .school-photos {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 50px;
+                margin: 30px 0;
+            }
+
+            .photo-item {
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                height: 250px;
+                width: 350px;
+                background-color: #e0e0e0;
+                display: block;
+                align-items: baseline;
+                justify-content: center;
+                color: #666;
+                font-weight: bold;
+            }
+
+            /* Table Styles */
+
+            .bangla {
+                /* font-family: 'SolaimanLipi', Arial, sans-serif;
+                font-size: 13px;*/
+                font-family: 'SolaimanLipi', 'Siyam Rupali', Arial, sans-serif;
+                margin: 20px;
+                line-height: 1.6;
+            }
+
+            .responsive-table {
+                width: 100%;
+                overflow-x: auto;
+                margin: 20px 0;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                min-width: 600px;
+            }
+
+            th {
+                background-color: #1a5fb4; /* Blue header background */
+                color: white;
+                padding: 12px 15px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.1em;
+                position: sticky;
+                top: 0;
+            }
+
+            td {
+                padding: 12px 15px;
+                text-align: center;
+                border-bottom: 1px solid #e0e0e0;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+
+            tr:hover {
+                background-color: #e9ecef;
+            }
+
+            @media screen and (max-width: 768px) {
+                table {
+                    display: block;
+                    min-width: unset;
+                }
+
+                thead, tbody, th, td, tr {
+                    display: block;
+                }
+
+                    thead tr {
+                        position: absolute;
+                        top: -9999px;
+                        left: -9999px;
+                    }
+
+                tr {
+                    margin-bottom: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+
+                td {
+                    border: none;
+                    border-bottom: 1px solid #eee;
+                    position: relative;
+                    padding-left: 50%;
+                    text-align: right;
+                }
+
+                    td:before {
+                        position: absolute;
+                        left: 15px;
+                        width: 45%;
+                        padding-right: 10px;
+                        white-space: nowrap;
+                        text-align: left;
+                        font-weight: bold;
+                        color: #1a5fb4; /* Blue color matching header */
+                    }
+
+                    td:nth-of-type(1):before {
+                        content: "নাম";
+                    }
+
+                    td:nth-of-type(2):before {
+                        content: "পদবী";
+                    }
+
+                    td:nth-of-type(3):before {
+                        content: "যোগাযোগ";
+                    }
+                     
+            }
+        </style>
+
+        <div id="contents" class="sixteen columns">
+            <div class="twelve columns" id="left-content">
+
+
+                <div class="row mainwrapper">
+
+                    <div class="card" style="text-align: center; text-decoration: underline;">
+
+                        <h2>বিদ্যালয় ব্যবস্থাপনা কমিটি</h2>
+
+                    </div>
+
+
+
+                    <div class="card" style="text-align:justify">
+                        
+
+
+                        <div class="card">
+
+                            <p>আমাদের বিদ্যালয় একটি বিদ্যালয় ব্যবস্থাপনা কমিটির মাধ্যমে পরিচালিত হয়। ব্যবস্থাপনা কমিটির সদস্যগণ হলেন:</p>
+                            <table class="bangla">
+                                <tr>
+                                    <th class="bangla">নাম</th>
+                                    <th class="bangla">পদবী</th>
+                                    <th class="bangla">যোগাযোগ</th>
+                                </tr>
+                                <tr>
+                                    <td class="bangla">জনাব মোঃ আলী (চেয়ারম্যান)</td>
+                                    <td class="bangla">সভাপতি</td>
+                                    <td class="bangla">০১৭১১-১১১১১১</td>
+                                </tr>
+                                <tr>
+                                    <td class="bangla">জনাব মোঃ রফিকুল ইসলাম</td>
+                                    <td class="bangla">সদস্য সচিব (প্রধান শিক্ষক)</td>
+                                    <td class="bangla">০১৭১১-১২৩৪৫৬</td>
+                                </tr>
+                                <tr>
+                                    <td class="bangla">জনাবা নাসরিন আক্তার</td>
+                                    <td class="bangla">সদস্য (সহকারী প্রধান শিক্ষক)</td>
+                                    <td class="bangla">০১৭১১-২৩৪৫৬৭</td>
+                                </tr>
+                                <tr>
+                                    <td class="bangla">জনাবা শারমিন আক্তার</td>
+                                    <td class="bangla">সদস্য (শিক্ষক প্রতিনিধি)</td>
+                                    <td class="bangla">০১৭১১-৩৩৩৩৩৩</td>
+                                </tr>
+                                <tr>
+                                    <td class="bangla">জনাব জামাল উদ্দিন</td>
+                                    <td class="bangla">সদস্য (শিক্ষক প্রতিনিধি)</td>
+                                    <td class="bangla">০১৭১১-৪৪৪৪৪৪</td>
+                                </tr>
+                                <tr>
+                                    <td class="bangla">জনাব করিম আহমেদ</td>
+                                    <td class="bangla">সদস্য (অভিভাবক প্রতিনিধি)</td>
+                                    <td class="bangla">০১৭১১-৫৫৫৫৫৫</td>
+                                </tr>
+                                <tr>
+                                    <td class="bangla">জনাবা নাসরিন সুলতানা</td>
+                                    <td class="bangla">সদস्य (অভিভাবক প্রতিনিধি)</td>
+                                    <td class="bangla">০১৭১১-৬৬৬৬৬৬</td>
+                                </tr>
+                                <tr>
+                                    <td class="bangla">জনাব শাহিদুল ইসলাম</td>
+                                    <td class="bangla">সদস্য (স্থানীয় গণ্যমান্য ব্যক্তি)</td>
+                                    <td class="bangla">০১৭১১-৭৭৭৭৭৭</td>
+                                </tr>
+                            </table>
+                            <div class="card">
+
+                                <h2 style="text-align: center; text-decoration: underline;">কমিটির সভার সময়সূচী</h2>
+
+                            </div>
+                            <!--<h3 class="bangla">কমিটির সভার সময়সূচী</h3>-->
+                            <p class="bangla">বিদ্যালয় ব্যবস্থাপনা কমিটি প্রতি মাসের প্রথম শনিবার সকাল ১১:০০ টায় বিদ্যালয়ের সম্মেলন কক্ষে সভা করে।</p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="four columns right-side-bar" id="right-content">
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        প্রধান শিক্ষক
+                    </h5>
+
+                    <h3 style="text-align:center"><img alt="" src="images/HT.jpg" style="height:250px; width:205px"></h3>
+
+                    <h3 style="text-align:center"><span style="font-size:14px">প্রফেসর মো: শামছুল ইসলাম</span></h3>
+
+                    <p style="text-align:center"><span style="font-size:14px">চেয়ারম্যান,মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষাবোর্ড, কুমিল্লা</span></p>
+
+                    <p style="text-align:center"><span style="font-size:14px">ফোন : ০২৩৩৪৪০৬৩২৮</span></p>
+
+                    <p style="text-align:center"><span style="font-size:14px">ইমেইল :chairman@pkhs.edu.bd</span></p>
+                    <!--<p>
+                        <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
+                    </p>-->
+
+                </div>
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        চেয়ারম্যান
+                    </h5>
+
+                    <h3 style="text-align:center"><img alt="" src="images/CM.jpg" style="height:250px; width:205px"></h3>
+
+                    <h3 style="text-align:center"><span style="font-size:14px">প্রফেসর মো: শামছুল ইসলাম</span></h3>
+
+                    <p style="text-align:center"><span style="font-size:14px">চেয়ারম্যান,মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষাবোর্ড, কুমিল্লা</span></p>
+
+                    <p style="text-align:center"><span style="font-size:14px">ফোন : ০২৩৩৪৪০৬৩২৮</span></p>
+
+                    <p style="text-align:center"><span style="font-size:14px">ইমেইল :chairman@pkhs.edu.bd</span></p>
+                    <!--<p>
+                        <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
+                    </p>-->
+                </div>
+                <style>
+                    #right-content .block {
+                        display: block !important
+                    }
+                </style>
+
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        অভিযোগ নিষ্পত্তি কর্মকর্তা
+                    </h5>
+
+
+                    <ul class="caption fade-caption" style="margin:0">
+                        <li>জনাব আব্দুল করিম</li>
+                        <li>কক্ষ: প্রশাসনিক ভবন, নিচতলা</li>
+                        <li>ফোন: ০১৭১১-৫৬৭৮৯০</li>
+                        <li>ইমেইল:Complaints@pkhs.edu.bd</li>
+                    </ul>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="column block">
+
+                    <h5 class="bk-org title">
+
+                        তথ্য সেবা কেন্দ্র
+                    </h5>
+
+                    <ul class="caption fade-caption" style="margin:0">
+                        <li>অবস্থান: প্রধান গেট, বাম পাশ</li>
+                        <li>সময়: সকাল ৮:০০ - বিকাল ৪:০০</li>
+                        <li>দিন : রবিবার থেকে বৃহস্পতিবার</li>
+                        <li>ফোন: ০১৭১১-৪৫৬৭৮৯</li>
+                        <li>ইমেইল: info@pkhs.edu.bd</li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        গুরুর্তপূর্ন লিঙ্ক সমূহ
+                    </h5>
+                    <ul class="caption fade-caption" style="margin:0">
+
+                        <li><a href="http://www.forms.gov.bd/">ফরমস পোর্টাল</a></li>
+
+                        <li><a href="http://www.moedu.gov.bd/">শিক্ষা মন্ত্রনালয়</a></li>
+
+                        <li><a href="https://comillaboard.portal.gov.bd/">কুমিল্লা শিক্ষা বোর্ড</a></li>
+
+                        <li><a href="http://www.bangladesh.gov.bd">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
+
+                        <li><a href="http://services.portal.gov.bd/">সেবাকুঞ্জ</a></li>
+
+                        <li><a href="http://www.bou.ac.bd/result.php">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় ফলাফল</a></li>
+
+                        <li><a href="https://www.noakhali.gov.bd/">নোয়াখালী জেলা</a></li>
+                    </ul>
+
+                </div>
+
+
+
+
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        ফেইসবুক
+                    </h5>
+
+                    <p>
+                        <a href="https://www.facebook.com/profile.php?id=100029446217767" target="_blank">
+                            <img alt="" src="images/FB.png" style="float:left; height:50px; width:220px">
+                        </a>
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-artwork" id="footer-artwork"></div>
+    <div class="footer-wrapper full-width" id="footer-wrapper">
+        <div id="footer-menu">
+
+            <footer id="contact">
+                <div class="container">
+
+                    <div class="copyright">
+                        <p>&copy; ২০২৩ পৌর কল্যাণ উচ্চ বিদ্যালয়। সকল স্বত্ব সংরক্ষিত।</p>
+                        <p>ডিজাইন ও ডেভেলপমেন্ট: বিদ্যালয় আইটি বিভাগ</p>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+
+        <hr>
+
+    </div>
+
+
+    <style>
+
+        #footer-menu {
+            width: 100% !important
+        }
+            /*inline-block*/
+            #footer-menu ul {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+                #footer-menu ul li {
+                    display: inline-block !important;
+                    width: auto !important
+                }
+
+                    #footer-menu ul li a {
+                        text-decoration: underline;
+                    }
+
+        .footer-credit {
+            float: none;
+            width: 60%;
+            margin: 0 auto !important;
+            text-align: center;
+        }
+    </style>
+
+
+</body>
+</html> 
