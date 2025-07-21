@@ -1,9 +1,10 @@
 @import url(../fonts/kalpurush/stylesheet.css);
 
-*{
-    padding:0;
-    margin:0;
-    font-family: kalpurushregular!important;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: kalpurushregular !important;
+
 }
 .footer-wrapper {
 	background-color:#EBEBEB;
