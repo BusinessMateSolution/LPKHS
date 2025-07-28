@@ -97,6 +97,66 @@
                 background-color: white;
                 padding: 5px;
             }
+
+            .marquee-container {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                position: relative;
+                margin: 20px 0;
+            }
+
+            .marquee {
+                display: inline-block;
+                animation: scroll 20s linear infinite;
+            }
+
+                .marquee:hover {
+                    animation-play-state: paused;
+                }
+
+                .marquee img {
+                    height: 200px;
+                    margin-right: 15px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                    transition: transform 0.3s;
+                }
+
+                    .marquee img:hover {
+                        transform: scale(1.05);
+                    }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .marquee img {
+                    height: 150px;
+                    margin-right: 10px;
+                }
+
+                .marquee {
+                    animation: scroll 15s linear infinite;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .marquee img {
+                    height: 120px;
+                    margin-right: 8px;
+                }
+            }
         </style>
         <style>
             .founded {
@@ -628,8 +688,22 @@
                         </h5>
 
                         <p style="text-align:justify">
+                            <!--<marquee behavior="alternate" direction="left">
+                                <img src="../images/img_nat.png" width="120" height="80" alt="Natural" />
+                            </marquee>-->
+                            <div class="marquee-container">
+                                <div class="marquee">
 
-                            <img src="images\PKHS-School.jpg" alt="পৌর কল্যাণ উচ্চ বিদ্যালয় লোগো">
+                                    <img src="images\PKHS-School.jpg" alt="PKHS-School">
+                                    <img src="images\T2.jpg" alt="Photo 2">
+                                    <img src="images\TS1.jpg" alt="Photo 3">
+                                    <img src="images\TS2.jpg" alt="Photo 4">
+                                    <img src="images\PKHS-School.jpg" alt="Photo 5">
+                                    <img src="images\PKHS-School.jpg" alt="Photo 6">
+
+                                </div>
+                            </div>
+                            <!--<img src="images\PKHS-School.jpg" alt="পৌর কল্যাণ উচ্চ বিদ্যালয় লোগো">-->
                             <br>
                             <br>
                         </p>
@@ -663,9 +737,9 @@
                     <div class="row" id="notice-board">
                         <div class="notice-board-bg">
                             <!--<h2 class="bk-org title" style="text-align:center">
-                        নোটিশ বোর্ড
+                                নোটিশ বোর্ড
 
-                    </h2>-->
+                            </h2>-->
                             <h2>
                                 নোটিশ বোর্ড
 
@@ -967,128 +1041,128 @@
 
             </div>
             <!--<div class="four columns right-side-bar" id="right-content">
-        <div class="column block">
-            <h5 class="bk-org title">
-                চেয়ারম্যান
-            </h5>
+            <div class="column block">
+                <h5 class="bk-org title">
+                    চেয়ারম্যান
+                </h5>
 
-            <h3 style="text-align:center"><img alt="" src="images/CM.jpg" style="height:250px; width:205px"></h3>
+                <h3 style="text-align:center"><img alt="" src="images/CM.jpg" style="height:250px; width:205px"></h3>
 
-            <h3 style="text-align:center"><span style="font-size:14px">মুহাম্মদ ঈসমাঈল</span></h3>
+                <h3 style="text-align:center"><span style="font-size:14px">মুহাম্মদ ঈসমাঈল</span></h3>
 
-            <p style="text-align:center"><span style="font-size:14px">অতিরিক্ত জেলা প্রশাসক(সার্বিক), নোয়াখালী</span></p>
+                <p style="text-align:center"><span style="font-size:14px">অতিরিক্ত জেলা প্রশাসক(সার্বিক), নোয়াখালী</span></p>
 
-            <p style="text-align:center"><span style="font-size:14px">ফোন : ০১৭০৫-৪০১০০১</span></p>
+                <p style="text-align:center"><span style="font-size:14px">ফোন : ০১৭০৫-৪০১০০১</span></p>
 
-            <p style="text-align:center"><span style="font-size:14px">ইমেইল :pkhschool.noa@yahoo.com</span></p>-->
+                <p style="text-align:center"><span style="font-size:14px">ইমেইল :pkhschool.noa@yahoo.com</span></p>-->
             <!--<p>
-        <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
-    </p>-->
+                <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
+            </p>-->
             <!--</div>
-    <div class="column block">
-        <h5 class="bk-org title">
-            প্রধান শিক্ষক
-        </h5>
-        <h3 style="text-align:center"><img alt="" src="images/HT.jpg" style="height:250px; width:205px"></h3>
+            <div class="column block">
+                <h5 class="bk-org title">
+                    প্রধান শিক্ষক
+                </h5>
+                <h3 style="text-align:center"><img alt="" src="images/HT.jpg" style="height:250px; width:205px"></h3>
 
-        <h3 style="text-align:center"><span style="font-size:14px">জনাব কামাল উদ্দিন</span></h3>
+                <h3 style="text-align:center"><span style="font-size:14px">জনাব কামাল উদ্দিন</span></h3>
 
-        <p style="text-align:center"><span style="font-size:14px">প্রধান শিক্ষক, পৌর কল্যাণ উচ্চ বিদ্যালয়, নোয়াখালী</span></p>
+                <p style="text-align:center"><span style="font-size:14px">প্রধান শিক্ষক, পৌর কল্যাণ উচ্চ বিদ্যালয়, নোয়াখালী</span></p>
 
-        <p style="text-align:center"><span style="font-size:14px">অফিস: ০৩২১-৬১২৩৪</span></p>
+                <p style="text-align:center"><span style="font-size:14px">অফিস: ০৩২১-৬১২৩৪</span></p>
 
-        <p style="text-align:center"><span style="font-size:14px">ইমেইল :info@pkhs.edu.bd</span></p>-->
+                <p style="text-align:center"><span style="font-size:14px">ইমেইল :info@pkhs.edu.bd</span></p>-->
             <!--<p>
-        <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
-    </p>-->
+                <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
+            </p>-->
             <!--</div>
-        <style>
-            #right-content .block {
-                display: block !important
-            }
-        </style>
+                <style>
+                    #right-content .block {
+                        display: block !important
+                    }
+                </style>
 
-        <div class="column block">
-            <h5 class="bk-org title">
-                অভিযোগ নিষ্পত্তি কর্মকর্তা
-            </h5>
-
-
-            <ul class="caption fade-caption" style="margin:0">
-                <li>জনাব আব্দুল করিম</li>
-                <li>কক্ষ: প্রশাসনিক ভবন, নিচতলা</li>
-                <li>ফোন: ০১৭১১-৫৬৭৮৯০</li>
-                <li>ইমেইল:Complaints@pkhs.edu.bd</li>
-            </ul>
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        অভিযোগ নিষ্পত্তি কর্মকর্তা
+                    </h5>
 
 
-
-        </div>
+                    <ul class="caption fade-caption" style="margin:0">
+                        <li>জনাব আব্দুল করিম</li>
+                        <li>কক্ষ: প্রশাসনিক ভবন, নিচতলা</li>
+                        <li>ফোন: ০১৭১১-৫৬৭৮৯০</li>
+                        <li>ইমেইল:Complaints@pkhs.edu.bd</li>
+                    </ul>
 
 
 
-
-
-        <div class="column block">
-
-            <h5 class="bk-org title">
-
-                তথ্য সেবা কেন্দ্র
-            </h5>
-
-            <ul class="caption fade-caption" style="margin:0">
-                <li>অবস্থান: প্রধান গেট, বাম পাশ</li>
-                <li>সময়: সকাল ৮:০০ - বিকাল ৪:০০</li>
-                <li>দিন : রবিবার থেকে বৃহস্পতিবার</li>
-                <li>ফোন: ০১৭১১-৪৫৬৭৮৯</li>
-                <li>ইমেইল: info@pkhs.edu.bd</li>
-            </ul>
-
-        </div>
-
-
-
-        <div class="column block">
-            <h5 class="bk-org title">
-                গুরুর্তপূর্ন লিঙ্ক সমূহ
-            </h5>
-            <ul class="caption fade-caption" style="margin:0">
-
-                <li><a href="http://www.forms.gov.bd/">ফরমস পোর্টাল</a></li>
-
-                <li><a href="http://www.moedu.gov.bd/">শিক্ষা মন্ত্রনালয়</a></li>
-
-                <li><a href="https://comillaboard.portal.gov.bd/">কুমিল্লা শিক্ষা বোর্ড</a></li>
-
-                <li><a href="http://www.bangladesh.gov.bd">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
-
-                <li><a href="http://services.portal.gov.bd/">সেবাকুঞ্জ</a></li>
-
-                <li><a href="http://www.bou.ac.bd/result.php">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় ফলাফল</a></li>
-
-                <li><a href="https://www.noakhali.gov.bd/">নোয়াখালী জেলা</a></li>
-            </ul>
-
-        </div>
+                </div>
 
 
 
 
-        <div class="column block">
-            <h5 class="bk-org title">
-                ফেইসবুক
-            </h5>
 
-            <p>
-                <a href="https://www.facebook.com/profile.php?id=100029446217767" target="_blank">
-                    <img alt="" src="images/FB.png" style="float:left; height:50px; width:220px">
-                </a>
-            </p>
+                <div class="column block">
 
-        </div>
+                    <h5 class="bk-org title">
+
+                        তথ্য সেবা কেন্দ্র
+                    </h5>
+
+                    <ul class="caption fade-caption" style="margin:0">
+                        <li>অবস্থান: প্রধান গেট, বাম পাশ</li>
+                        <li>সময়: সকাল ৮:০০ - বিকাল ৪:০০</li>
+                        <li>দিন : রবিবার থেকে বৃহস্পতিবার</li>
+                        <li>ফোন: ০১৭১১-৪৫৬৭৮৯</li>
+                        <li>ইমেইল: info@pkhs.edu.bd</li>
+                    </ul>
+
+                </div>
 
 
-    </div>-->
+
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        গুরুর্তপূর্ন লিঙ্ক সমূহ
+                    </h5>
+                    <ul class="caption fade-caption" style="margin:0">
+
+                        <li><a href="http://www.forms.gov.bd/">ফরমস পোর্টাল</a></li>
+
+                        <li><a href="http://www.moedu.gov.bd/">শিক্ষা মন্ত্রনালয়</a></li>
+
+                        <li><a href="https://comillaboard.portal.gov.bd/">কুমিল্লা শিক্ষা বোর্ড</a></li>
+
+                        <li><a href="http://www.bangladesh.gov.bd">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
+
+                        <li><a href="http://services.portal.gov.bd/">সেবাকুঞ্জ</a></li>
+
+                        <li><a href="http://www.bou.ac.bd/result.php">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় ফলাফল</a></li>
+
+                        <li><a href="https://www.noakhali.gov.bd/">নোয়াখালী জেলা</a></li>
+                    </ul>
+
+                </div>
+
+
+
+
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        ফেইসবুক
+                    </h5>
+
+                    <p>
+                        <a href="https://www.facebook.com/profile.php?id=100029446217767" target="_blank">
+                            <img alt="" src="images/FB.png" style="float:left; height:50px; width:220px">
+                        </a>
+                    </p>
+
+                </div>
+
+
+            </div>-->
         </div>
     </div>
 
