@@ -467,11 +467,10 @@ p {
 }
 
 .notice-board-bg {
-  background: url("../../images/welcome_grad.png") repeat-x
-    scroll left top transparent;
-  background-image: url("../../images/n2.png");
-  background-repeat: no-repeat;
-  padding: 10px 0 20px 120px;
+    background: url("../../images/welcome_grad.png") repeat-x scroll left top transparent;
+    background-image: url("../../images/n2.png");
+    background-repeat: no-repeat;
+    padding: 10px 0 20px 120px;
 }
 #notice-board-ticker {
   padding-right: 10px;
