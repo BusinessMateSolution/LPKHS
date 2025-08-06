@@ -1,3 +1,95 @@
+﻿<!--<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বিদ্যালয়ের জমি সংক্রান্ত তথ্য</title>-->
+<!-- Tailwind CSS CDN -->
+<!--<style>
+        /* Custom styles for better readability on small screens */
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+                thead tr {
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 1rem;
+                border-radius: 0.5rem;
+                overflow: hidden;
+            }
+
+            td {
+                /* Behave like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+
+                td:before {
+                    /* Now like a table header */
+                    position: absolute;
+                    /* Top/left values increase space for contents */
+                    top: 0;
+                    left: 6px;
+                    width: 45%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                    text-align: left;
+                    font-weight: bold;
+                }
+
+                /*
+            Label the data
+            */
+                td:nth-of-type(1):before {
+                    content: "মৌজার নাম";
+                }
+
+                td:nth-of-type(2):before {
+                    content: "জে.এল. নম্বর";
+                }
+
+                td:nth-of-type(3):before {
+                    content: "জরিপের নাম";
+                }
+
+                td:nth-of-type(4):before {
+                    content: "খতিয়ান নম্বর";
+                }
+
+                td:nth-of-type(5):before {
+                    content: "দাগ নম্বর";
+                }
+
+                td:nth-of-type(6):before {
+                    content: "পরিমাণ (একর)";
+                }
+
+                td:nth-of-type(7):before {
+                    content: "মোট";
+                }
+
+                td:nth-of-type(8):before {
+                    content: "মালিকানা";
+                }
+        }
+    </style>
+</head>
+
+</html>-->
+
+
+
+
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 </head>
@@ -19,7 +111,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="npfadmin/public/css/flaticon/flaticon.css">
     <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/templates/ministry/style.css">
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
 
     <link rel="stylesheet" href="themes/responsive_npf/stylesheets/responsiveslides.css">
@@ -677,6 +769,7 @@
             td {
                 padding: 12px 15px;
                 text-align: center;
+                vertical-align:middle;
                 border-bottom: 1px solid #e0e0e0;
             }
 
@@ -709,13 +802,18 @@
                     border: 1px solid #ddd;
                     border-radius: 5px;
                 }
-
+                td {
+                    padding: 12px 15px;
+                    text-align: center;
+                    border-bottom: 1px solid #e0e0e0;
+                }
                 td {
                     border: none;
                     border-bottom: 1px solid #eee;
-                    position: relative;
+                   
                     padding-left: 50%;
                     text-align: right;
+                    vertical-align:middle;
                 }
 
                     td:before {
@@ -778,89 +876,208 @@
             <div class="twelve columns" id="left-content">
                 <div class="row mainwrapper">
 
-                    <div class="card" style="text-align: center;">
-
-                        <h2>পাঠদান সংক্রান্ত তথ্য</h2>
-
-                    </div>
-
-
-
                     <div class="table-container">
-                        <h3 style="text-decoration: underline;">শ্রেণিভিত্তিক শাখাসমূহের তথ্য</h3>
-                        <p>বিদ্যালয়ে ৬ষ্ঠ থেকে ১০ম শ্রেণি পর্যন্ত সহশিক্ষা (ছাত্র-ছাত্রীদের ভিন্ন ভিন্ন) ব্যবস্থা চালু রয়েছে:</p>
 
-                        <table class="class-table styled-table">
-                            <thead>
-                                <tr>
-                                    <th>শ্রেণি</th>
-                                    <th>শাখা</th>
-                                    <th>বিষয়সমূহ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>ষষ্ঠ-অষ্টম</td>
-                                    <td>প্রতি শ্রেণির মূল শ্রেণি শাখা ও অতিরিক্ত দুটি করে শাখা রয়েছে।</td>
-                                    <td>জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="3">নবম-দশম</td>
-                                    <td>বিজ্ঞান</td>
-                                    <td> জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান </td>
-                                </tr>
-                                <tr>
-                                    <td>মানবিক</td>
-                                    <td> জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান </td>
-                                </tr>
-                                <tr>
-                                    <td>বাণিজ্য</td>
-                                    <td> জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        <div class="bg-gray-100 p-4 font-sans">
+                            <div class="container mx-auto bg-white shadow-lg rounded-lg p-6">
 
-                    <div class="card" style="text-align:justify">
-                     
-                        <h3>পাঠ্যক্রম</h3>
-                        <p>আমরা জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (এনসিটিবি) কর্তৃক অনুমোদিত জাতীয় শিক্ষাক্রম অনুসরণে অতিরিক্ত বিষয়সমূহ:</p>
-                        <ul>
-                            <li> তথ্য ও যোগাযোগ প্রযুক্তি(ষষ্ঠ-দশম শ্রেণি)</li>
-                            <li>কৃষি শিক্ষা ও গার্হস্থ্য বিজ্ঞান(ষষ্ঠ-অষ্টম শ্রেণি)</li>
-                            <li>শারীরিক শিক্ষা (সকল শ্রেণি)</li>
-                        </ul>
+                                <div class="card" style="text-align: center">
 
+                                    <h2>
+                                        বিদ্যালয়ের জমি সংক্রান্ত তথ্য
+                                    </h2>
 
-
-                    </div>
-
-                    <div class="card">
-                        <h3>নোটিশ বোর্ড</h3>
-
-                        <div class="notice-board">
-                            <div class="notice-item">
-                                <div class="notice-date">২৪ জুলাই, ২০২৫</div>
-                                <p>বিদ্যালয়ের ছাত্র-ছাত্রী, সম্মানিত অভিভাবকবৃন্দ ও সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৭ জুলাই ২০২৫ খ্রি. রবিবার বিদ্যালয়ের অর্ধবার্ষিক পরীক্ষার ফলাফল প্রকাশিত হবে। </p>
-                            </div>
-                            <div class="notice-item">
-                                <div class="notice-date"></div>
-                                <p></p>
-                            </div>
-                            <div class="notice-item">
-                                <div class="notice-date"></div>
-                                <p></p>
+                                </div>
+                                <div class="overflow-x-auto">
+                                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                                        <thead class="bg-blue-600 text-white">
+                                            <tr>
+                                                <th class="auto-style1">মৌজার নাম</th>
+                                                <th class="auto-style9">জে.এল. নম্বর</th>
+                                                <th class="auto-style5">জরিপের নাম</th>
+                                                <th class="auto-style9">খতিয়ান নম্বর</th>
+                                                <th class="auto-style5">দাগ নম্বর</th>
+                                                <th class="auto-style6">পরিমাণ (একর)</th>
+                                                <th class="auto-style10">মোট</th>
+                                                <th class="auto-style10">মালিকানা</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-gray-700">
+                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                <td  rowspan="9">হরিনারয়ণপুর</td>
+                                                <td class="auto-style9" rowspan="5">১৪২</td>
+                                                <td class="auto-style5" rowspan="5">এম.আর.আর</td>
+                                                <td class="auto-style9">৩৮</td>
+                                                <td class="auto-style5">২</td>
+                                                <td class="auto-style6">০.২০</td>
+                                                <td class="auto-style10" rowspan="5">১১৮.০০</td>
+                                                <td class="auto-style10" rowspan="9">নিজস্ব</td>
+                                            </tr>
+                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                <td class="auto-style9">৪২</td>
+                                                <td class="auto-style5">৩</td>
+                                                <td class="auto-style6">০.৩২</td>
+                                            </tr>
+                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                <td class="auto-style9">৪৩</td>
+                                                <td class="auto-style5">৪</td>
+                                                <td class="auto-style6">০.০৩</td>
+                                            </tr>
+                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                <td class="auto-style9">৪৪</td>
+                                                <td class="auto-style5">২১</td>
+                                                <td class="auto-style6">০.৬৪</td>
+                                            </tr>
+                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                <td class="auto-style9">৪৫</td>
+                                                <td class="auto-style5">২২</td>
+                                                <td class="auto-style6">০.০২</td>
+                                            </tr>
+                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                <td class="auto-style9" rowspan="4">১৫৫</td>
+                                                <td class="auto-style5" rowspan="4">বি.এস</td>
+                                                <td class="auto-style9">৯৫</td>
+                                                <td class="auto-style5">৫২</td>
+                                                <td class="auto-style6"></td>
+                                                <td class="auto-style10" rowspan="4">৯৮.০০</td>
+                                            </tr>
+                                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                                <td class="auto-style9">৯৬</td>
+                                                <td class="auto-style5">৫৪</td>
+                                                <td class="auto-style6"></td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50">
+                                                <td class="auto-style9">৯৭</td>
+                                                <td class="auto-style5"></td>
+                                                <td class="auto-style6"></td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50">
+                                                <td class="auto-style9">৯৮</td>
+                                                <td class="auto-style5">৫৮</td>
+                                                <td class="auto-style6"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-
 
                     </div>
 
 
 
                 </div>
-            
+
             </div>
+            <style>
+                                body {
+                                    font-family: 'Noto Sans Bengali', sans-serif;
+                                    background-color: #f8fafc;
+                                    margin: 0;
+                                    padding: 20px;
+                                }
+
+                                .container {
+                                    max-width: 100%;
+                                    overflow-x: auto;
+                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                    border-radius: 8px;
+                                    background: white;
+                                }
+
+                                table {
+                                    width: 100%;
+                                    border-collapse: collapse;
+                                    min-width: 800px;
+                                }
+
+                                th, td {
+                                    padding: 12px 8px;
+                                    text-align: center;
+                                    border: 1px solid #e2e8f0;
+                                }
+
+                                th {
+                                    background-color: #4f46e5;
+                                    color: white;
+                                    font-weight: 600;
+                                    position: sticky;
+                                    top: 0;
+                                }
+
+                                /*  tr:nth-child(even) {
+                            background-color: #f8fafc;
+                        }
+                */
+
+                                .science {
+                                    background-color: white;
+                                    font-weight: 200;
+                                }
+
+                                .arts {
+                                    background-color: #e0e7ff;
+                                    font-weight: 200;
+                                }
+
+                                .commerce {
+                                    background-color: white;
+                                    font-weight: 200;
+                                }
+
+
+
+                                /*   .year-row {
+                            background-color: #e0e7ff;
+                            font-weight: 200;
+                        }
+
+                        .group-row {
+                            background-color: white;
+                        }*/
+
+                                .total-row {
+                                    background-color: #1e293b;
+                                    color: white;
+                                    font-weight: 700;
+                                }
+
+                                .highlight {
+                                    background-color: #ecfdf5;
+                                }
+
+                                @media (max-width: 768px) {
+                                    th, td {
+                                        padding: 8px 4px;
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .auto-style1 {
+                                    width: 90px;
+                                    text-align:center
+                                }
+
+                                .auto-style5 {
+                                    width: 98px;
+                                }
+
+                                .auto-style6 {
+                                    width: 115px;
+                                }
+
+                                .auto-style8 {
+                                    width: 602px;
+                                }
+
+                                .auto-style9 {
+                                    width: 97px;
+                                }
+
+                                .auto-style10 {
+                                    width: 81px;
+                                }
+            </style>
             <div class="four columns right-side-bar" id="right-content">
 
                 <div class="column block">
@@ -983,7 +1200,7 @@
 
 
             </div>
-            
+
         </div>
     </div>
 
@@ -1042,4 +1259,6 @@
 
 
 </body>
-</html> 
+</html>
+
+ 

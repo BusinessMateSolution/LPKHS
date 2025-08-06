@@ -1,3 +1,4 @@
+
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 </head>
@@ -19,7 +20,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="npfadmin/public/css/flaticon/flaticon.css">
     <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/templates/ministry/style.css">
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
 
     <link rel="stylesheet" href="themes/responsive_npf/stylesheets/responsiveslides.css">
@@ -711,11 +712,12 @@
                 }
 
                 td {
-                    border: none;
+                    border: 1px solid;
                     border-bottom: 1px solid #eee;
                     position: relative;
                     padding-left: 50%;
                     text-align: right;
+                    vertical-align: middle;
                 }
 
                     td:before {
@@ -778,88 +780,123 @@
             <div class="twelve columns" id="left-content">
                 <div class="row mainwrapper">
 
-                    <div class="card" style="text-align: center;">
-
-                        <h2>পাঠদান সংক্রান্ত তথ্য</h2>
-
-                    </div>
-
-
-
                     <div class="table-container">
-                        <h3 style="text-decoration: underline;">শ্রেণিভিত্তিক শাখাসমূহের তথ্য</h3>
-                        <p>বিদ্যালয়ে ৬ষ্ঠ থেকে ১০ম শ্রেণি পর্যন্ত সহশিক্ষা (ছাত্র-ছাত্রীদের ভিন্ন ভিন্ন) ব্যবস্থা চালু রয়েছে:</p>
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <!--<thead class="bg-indigo-600">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-lg">
+                                        এক নজরে স্কুল
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tr-lg">
+                                        Details
+                                    </th>
+                                </tr>
+                            </thead>-->
+                            <div class="card" style="text-align: center">
 
-                        <table class="class-table styled-table">
-                            <thead>
+                                <h2>
+                                    এক নজরে স্কুল
+                                </h2>
+
+                            </div>
+
+                            <tbody class="bg-white divide-y divide-gray-200">
                                 <tr>
-                                    <th>শ্রেণি</th>
-                                    <th>শাখা</th>
-                                    <th>বিষয়সমূহ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>ষষ্ঠ-অষ্টম</td>
-                                    <td>প্রতি শ্রেণির মূল শ্রেণি শাখা ও অতিরিক্ত দুটি করে শাখা রয়েছে।</td>
-                                    <td>জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠানের নাম</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">পৌর কল্যাণ উচ্চ বিদ্যালয়</td>
                                 </tr>
                                 <tr>
-                                    <td rowspan="3">নবম-দশম</td>
-                                    <td>বিজ্ঞান</td>
-                                    <td> জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">EIIN No.</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">107538</td>
                                 </tr>
                                 <tr>
-                                    <td>মানবিক</td>
-                                    <td> জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">MPO Code</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1106011305</td>
                                 </tr>
                                 <tr>
-                                    <td>বাণিজ্য</td>
-                                    <td> জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ঠিকানা</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">মাইজদী কোর্ট, নোয়াখালী পৌরসভা, নোয়াখালী সদর, নোয়াখালী-৩৮০০</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠানের ধরন</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">স্কুল</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">স্তর</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">মাধ্যমিক</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">শিক্ষা কার্যক্রম</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সহ-শিক্ষা</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠাকাল</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১৯৪০ খ্রি.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রথম স্বীকৃতি</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">২০-১২-১৯৪৬ খ্রি.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">শেষ স্বীকৃতি</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">৩১-১২-১৯২৬ খ্রি. তারিখ পর্যন্ত</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">পরিচালনা</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">বেসরকারি (এমপিওভূক্ত)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">কমিটির ধরন</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ম্যানেজিং কমিটি</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ভৌ. অবস্থান</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সমতল এলাকা</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">উপজেলা দপ্তর</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১ কি.মি দূরে অবস্থিত</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">বিদ্যুত ব্যবস্থা</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সচল</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">পানির ব্যবস্থা</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">নোয়াখালী পৌরসভা কর্তৃক সরবরাহকৃত</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">গ্যাস সংযোগ</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সচল</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">সৌচাগার</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ছাত্রদের-০৪টি, ছাত্রীদের-০৩টি, শিক্ষক-কর্মচারীদের-০২টি, প্রধান শিক্ষকের-০১টি</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ভবন সংখ্যা</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">দ্বিতল ভবন-০২ টি, সেমি পাকা-০১ টি, টিনশেড-০১টি</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">কক্ষ সংখ্যা</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১৫টি</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">হলকক্ষ</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">০১টি</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">খেলার মাঠ</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">০১টি</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <div class="card" style="text-align:justify">
-                     
-                        <h3>পাঠ্যক্রম</h3>
-                        <p>আমরা জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (এনসিটিবি) কর্তৃক অনুমোদিত জাতীয় শিক্ষাক্রম অনুসরণে অতিরিক্ত বিষয়সমূহ:</p>
-                        <ul>
-                            <li> তথ্য ও যোগাযোগ প্রযুক্তি(ষষ্ঠ-দশম শ্রেণি)</li>
-                            <li>কৃষি শিক্ষা ও গার্হস্থ্য বিজ্ঞান(ষষ্ঠ-অষ্টম শ্রেণি)</li>
-                            <li>শারীরিক শিক্ষা (সকল শ্রেণি)</li>
-                        </ul>
-
-
-
-                    </div>
-
-                    <div class="card">
-                        <h3>নোটিশ বোর্ড</h3>
-
-                        <div class="notice-board">
-                            <div class="notice-item">
-                                <div class="notice-date">২৪ জুলাই, ২০২৫</div>
-                                <p>বিদ্যালয়ের ছাত্র-ছাত্রী, সম্মানিত অভিভাবকবৃন্দ ও সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৭ জুলাই ২০২৫ খ্রি. রবিবার বিদ্যালয়ের অর্ধবার্ষিক পরীক্ষার ফলাফল প্রকাশিত হবে। </p>
-                            </div>
-                            <div class="notice-item">
-                                <div class="notice-date"></div>
-                                <p></p>
-                            </div>
-                            <div class="notice-item">
-                                <div class="notice-date"></div>
-                                <p></p>
-                            </div>
-                        </div>
-
-
-                    </div>
-
 
 
                 </div>
-            
+
             </div>
             <div class="four columns right-side-bar" id="right-content">
 
@@ -983,7 +1020,7 @@
 
 
             </div>
-            
+
         </div>
     </div>
 
@@ -1036,10 +1073,97 @@
             margin: 0 auto !important;
             text-align: center;
         }
+
+      
     </style>
 
     ﻿
 
 
 </body>
-</html> 
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Information</title>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .table-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow-x: auto; /* Makes table horizontally scrollable on small screens */
+            width: 100%;
+            max-width: 900px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* Ensures table doesn't shrink too much */
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: #4f46e5;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tr:hover {
+            background-color: #eff6ff;
+        }
+
+        td:first-child {
+            font-weight: 500;
+            color: #334155;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            th, td {
+                padding: 12px 15px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .table-container {
+                border-radius: 8px;
+            }
+
+            th, td {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>-->
