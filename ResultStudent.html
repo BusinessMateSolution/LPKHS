@@ -1,13 +1,14 @@
+
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 </head>
-<body class="3mtJtoAx70UA.bd">
+<body>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>পৌর কল্যাণ উচ্চ বিদ্যালয়</title>
     <!-- Mobile Specific Metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    
     <meta name="description" content="">
 
     <!-- =============== tt canonical End =============================== -->
@@ -19,7 +20,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="npfadmin/public/css/flaticon/flaticon.css">
     <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/templates/ministry/style.css">
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
 
     <link rel="stylesheet" href="themes/responsive_npf/stylesheets/responsiveslides.css">
@@ -626,7 +627,15 @@
                 gap: 50px;
                 margin: 30px 0;
             }
+            .highlight {
+                background: linear-gradient(120deg, rgba(255, 255, 0, 0.3), transparent 60%);
+                padding: 0 4px;
+                font-weight: 600;
+            }
 
+            .bengali-text {
+                font-family: 'Noto Sans Bengali', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
             .photo-item {
                 border-radius: 10px;
                 overflow: hidden;
@@ -640,18 +649,17 @@
                 color: #666;
                 font-weight: bold;
             }
+        </style>
 
-            /* Table Styles */
-
-            .bangla {
-                /* font-family: 'SolaimanLipi', Arial, sans-serif;
-                font-size: 13px;*/
-                font-family: 'SolaimanLipi', 'Siyam Rupali', Arial, sans-serif;
-                margin: 20px;
-                line-height: 1.6;
+        <style>
+            h2 {
+                color: #2c7be5;
+                margin-top: 30px;
+                border-bottom: 2px solid #2c7be5;
+                padding-bottom: 5px;
             }
 
-            .responsive-table {
+            .table-container {
                 width: 100%;
                 overflow-x: auto;
                 margin: 20px 0;
@@ -663,23 +671,25 @@
                 width: 100%;
                 border-collapse: collapse;
                 min-width: 600px;
+                position: sticky;
             }
 
             th {
-                background-color: #1a5fb4; /* Blue header background */
+                background-color: #2c7be5;
                 color: white;
-                /*padding: 12px 15px;*/
+                /*  padding: 12px 15px;*/
                 text-align: center;
                 font-weight: bold;
-                font-size: 1.1em;
                 position: sticky;
                 top: 0;
+                border: 1px solid #e2e8f0;
             }
 
             td {
                 padding: 12px 15px;
                 text-align: center;
                 border-bottom: 1px solid #e0e0e0;
+                position: sticky;
             }
 
             tr:nth-child(even) {
@@ -698,12 +708,14 @@
 
                 thead, tbody, th, td, tr {
                     display: block;
+                    position: sticky;
                 }
 
                     thead tr {
                         position: absolute;
                         top: -9999px;
                         left: -9999px;
+                        position: sticky;
                     }
 
                 tr {
@@ -713,11 +725,12 @@
                 }
 
                 td {
-                    border: none;
+                    border: 1px solid;
                     border-bottom: 1px solid #eee;
                     position: relative;
                     padding-left: 50%;
                     text-align: right;
+                    vertical-align: middle;
                 }
 
                     td:before {
@@ -728,74 +741,170 @@
                         white-space: nowrap;
                         text-align: left;
                         font-weight: bold;
-                        color: #1a5fb4; /* Blue color matching header */
+                        color: #2c7be5;
                     }
 
-                    td:nth-of-type(1):before {
-                        content: "শ্রেণি";
+                .science {
+                    background-color: white;
+                    font-weight: 200;
+                }
+
+                .arts {
+                    background-color: #e0e7ff;
+                    font-weight: 200;
+                }
+
+                .commerce {
+                    background-color: white;
+                    font-weight: 200;
+                }
+                .total-row {
+                    background-color: #2ec27e;
+                    color: white;
+                    font-weight: 700;
+                }
+                .responsive-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                    .responsive-table thead {
+                        background: linear-gradient(135deg, #1a5fb4 0%, #0d47a1 100%);
+                        color: white;
                     }
 
-                    td:nth-of-type(2):before {
-                        content: "মোট শিক্ষার্থী";
+                    .responsive-table th {
+                        padding: 18px 20px;
+                        text-align: left;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
                     }
 
-                    td:nth-of-type(3):before {
-                        content: "ছাত্র";
+                        .responsive-table th:first-child {
+                            border-top-left-radius: 15px;
+                        }
+
+                        .responsive-table th:last-child {
+                            border-top-right-radius: 15px;
+                        }
+
+                    .responsive-table tbody tr {
+                        border-bottom: 1px solid #e0e7ff;
+                        transition: background-color 0.2s;
                     }
 
-                    td:nth-of-type(4):before {
-                        content: "ছাত্রী";
+                        .responsive-table tbody tr:hover {
+                            background-color: #f5f9ff;
+                        }
+
+                    .responsive-table td {
+                        padding: 16px 20px;
+                        font-size: 1.05rem;
                     }
+
+                        .responsive-table td:first-child {
+                            font-weight: 600;
+                            color: #1a5fb4;
+                            min-width: 200px;
+                        }
+                /* Dynamic column labels for each table */
+                .class-table td:nth-of-type(1):before {
+                    content: "শ্রেণি";
+                }
+
+                .class-table td:nth-of-type(2):before {
+                    content: "অনুমোদিত শাখা";
+                }
+
+                .class-table td:nth-of-type(3):before {
+                    content: "বিষয়সমূহ";
+                }
+
+                .science-table td:nth-of-type(1):before,
+                .commerce-table td:nth-of-type(1):before {
+                    content: "দিন";
+                }
+
+                .science-table td:nth-of-type(2):before,
+                .commerce-table td:nth-of-type(2):before {
+                    content: "০৮:৩০-০৯:৩০";
+                }
+
+                .science-table td:nth-of-type(3):before,
+                .commerce-table td:nth-of-type(3):before {
+                    content: "০৯:৩০-১০:৩০";
+                }
+
+                .science-table td:nth-of-type(4):before,
+                .commerce-table td:nth-of-type(4):before {
+                    content: "১০:৪৫-১১:৪৫";
+                }
+
+                .science-table td:nth-of-type(5):before,
+                .commerce-table td:nth-of-type(5):before {
+                    content: "১১:৪৫-১২:৪৫";
+                }
+
+                .science-table td:nth-of-type(6):before,
+                .commerce-table td:nth-of-type(6):before {
+                    content: "০১:৩০-০২:৩০";
+                }
+
+
             }
         </style>
 
-
-
         <div id="contents" class="sixteen columns">
             <div class="twelve columns" id="left-content">
+                <div style="text-align: center">
+
+                    <h2>
+                        <a href="ResultStudent.html">এস.এস.সি ফলাফল-শিক্ষার্থী</a>
+                    </h2>
+
+                </div>
                 <div class="row mainwrapper">
+                    <iframe src="http://www.educationboardresults.gov.bd/" width="600" height="600" title="Google Search Page"></iframe>
 
-                    <div class="card" style="text-align:center">
-                        <!--<div class="column block">-->
-                        <p style="text-align:justify">
-                            <img src="images\PKHS-School.jpg" alt="পৌর কল্যাণ উচ্চ বিদ্যালয় লোগো">
-                        </p>
-                    </div>
-
-                    <div class="card" style="text-align: center; text-decoration: underline;">
+                </div>
+                <div style="text-align: center">
+                    <div style="text-align: center">
 
                         <h2>
-                            শিক্ষা প্রতিষ্ঠান পরিচিতি
+                            <a href="ResultStudent.html">এস.এস.সি ফলাফল-শিক্ষার্থী</a>
                         </h2>
 
                     </div>
-                    <div class="card" style="text-align:justify">
-                        <h5 class="bk-org title">ইতিহাস ও প্রাতিষ্ঠানিক পরিচিতি</h5>
-                        <p></p>
-                        <p>পৌর কল্যাণ উচ্চ বিদ্যালয় ১৯৪০ সালে প্রতিষ্ঠিত নোয়াখালী জেলা শহর মাইজদী কোর্ট-এ অবস্থিত একটি প্রাচীন ও ঐতিহ্যবাহী মাধ্যমিক শিক্ষাপ্রতিষ্ঠান। প্রতিষ্ঠার পর থেকেই এ বিদ্যালয়টি অত্যন্ত সুনামের সাথে এ অঞ্চলের মাধ্যমিক শিক্ষা উন্নয়নে অগ্রণী ভূমিকা পালন করে আসছে। বিদ্যালয়টি নোয়াখালী পৌরসভায় প্রধান সড়ক সংলগ্ন হওয়ায় এবং সকল প্রকার যানবাহনের সুব্যবস্থা থাকায় শিক্ষার্থীদের বিদ্যালয়ে যাতায়াত করতে কোনরূপ অসুবিধার সম্মুখীন হতে হয়না। বিদ্যালয়টিতে সহশিক্ষা ব্যাবস্থা চালু রয়েছে এবং বর্তমানে সাতশতাধিক ছাত্র-ছাত্রী রয়েছে। দক্ষ ও অভিজ্ঞ শিক্ষকমণ্ডলী দ্বারা বিদ্যালয়ের শিক্ষা কার্যক্রম পরিচালিত হয়। সহপাঠক্রমিক কার্যক্রমেও প্রতিষ্ঠানটি নিয়মিত অংশগ্রহণ করে আসছে। বিদ্যালয়ের এস.এস.সি পরীক্ষার ফলাফলও সন্তোষজনক। ১৯৮২ সালে নোয়াখালী পৌরসভা বিদ্যালয়টি পরিচালনার দায়িদ্বভার করে। এখানে আধুনিক বিজ্ঞান ও কম্পিউটার ল্যাব এবং লাইব্রেরি ব্যাবস্থা রয়েছে। ছাত্র-ছাত্রীদের জন্য গুণগত শিক্ষা নিশ্চিত করতে এ প্রতিষ্ঠান সর্বদা প্রতিশ্রুতিবদ্ধ।</p>
-                        <br />
-                        <h5 class="bk-org title">প্রতিষ্ঠানের বৈশিষ্ট্য:</h5>
+                    <!--<h2>
                         <ul>
-                            <li>আধুনিক বিজ্ঞান ও কম্পিউটার ল্যাব</li>
-                            <li>সমৃদ্ধ লাইব্রেরি (৫,০০০+ বই)</li>
-                            <li>সহপাঠক্রমিক কার্যক্রমের সুব্যবস্থা</li>
-                            <li>স্কাউটিং</li>
-                            <li>কাউন্সেলিং ও ক্যারিয়ার গাইডেন্স</li>
-                            <li>অভিজ্ঞ ও প্রশিক্ষিত শিক্ষকমণ্ডলী</li>
+
+
+                            <li><a href="ResultStudent.html">এস.এস.সি ফলাফল-শিক্ষার্থী</a></li>
+
+
                         </ul>
-                        <div class="school-photos">
-                            <div>  <img src="images\T2.jpg" style="height: 100%; width: 100%" alt="শ্রেণিকক্ষের ছবি"></div>
-                            <div>  <img src="images\TS2.jpg" style="height: 100%; width: 100%" alt="খেলার মাঠের ছবি"></div>
-
-                        </div>
-                        <div class="school-photos">
-                            <div>  <img src="images\TS1.jpg" style="height: 50%; width: 100%" alt="খেলার মাঠের ছবি"></div>
-                            <div>  <img src="images\A1.jpg" style="height: 50%; width: 100% " alt="প্রাঙ্গণের ছবি"></div>
-                        </div>
-
-                    </div>
+                    </h2>-->
 
                 </div>
+
+                <!--<div class="row mainwrapper">
+        <iframe src="http://mail.educationboard.gov.bd/web/" width="600" height="600" title="Google Search Page"></iframe>
+    </div>-->
+                <!--<iframe src="http://www.educationboardresults.gov.bd/" width="600" height="600" title="Google Search Page"></iframe>-->
+                <!--<iframe src="http://www.educationboardresults.gov.bd/" width="800" height="600" title="এস.এস.সি ফলাফল-শিক্ষার্থী"></iframe>-->
+                <!--<iframe src=""
+            title="">
+    </iframe>
+
+    <iframe src="http://www.educationboardresults.gov.bd/" title="এস.এস.সি ফলাফল-শিক্ষার্থী"></iframe>
+
+    <iframe src="http://www.educationboardresults.gov.bd/" title="এস.এস.সি ফলাফল-শিক্ষার্থী"></iframe>-->
+
+
+
+
 
 
 
@@ -888,7 +997,7 @@
                     </h5>
                     <ul class="caption fade-caption" style="margin:0">
 
-                        <li><a href="http://www.forms.gov.bd/" target="_blank" >ফরমস পোর্টাল</a></li>
+                        <!--<li><a href="http://www.forms.gov.bd/" target="_blank">ফরমস পোর্টাল</a></li>-->
 
                         <li><a href="http://www.moedu.gov.bd/" target="_blank">শিক্ষা মন্ত্রনালয়</a></li>
 
@@ -923,130 +1032,7 @@
 
 
             </div>
-            <!--<div class="four columns right-side-bar" id="right-content">
-        <div class="column block">
-            <h5 class="bk-org title">
-                চেয়ারম্যান
-            </h5>
 
-            <h3 style="text-align:center"><img alt="" src="images/CM.jpg" style="height:250px; width:205px"></h3>
-
-            <h3 style="text-align:center"><span style="font-size:14px">মুহাম্মদ ঈসমাঈল</span></h3>
-
-            <p style="text-align:center"><span style="font-size:14px">অতিরিক্ত জেলা প্রশাসক(সার্বিক), নোয়াখালী</span></p>
-
-            <p style="text-align:center"><span style="font-size:14px">ফোন : ০১৭০৫-৪০১০০১</span></p>
-
-            <p style="text-align:center"><span style="font-size:14px">ইমেইল :pkhschool.noa@yahoo.com</span></p>-->
-            <!--<p>
-        <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
-    </p>-->
-            <!--</div>
-    <div class="column block">
-        <h5 class="bk-org title">
-            প্রধান শিক্ষক
-        </h5>
-        <h3 style="text-align:center"><img alt="" src="images/HT.jpg" style="height:250px; width:205px"></h3>
-
-        <h3 style="text-align:center"><span style="font-size:14px">জনাব কামাল উদ্দিন</span></h3>
-
-        <p style="text-align:center"><span style="font-size:14px">প্রধান শিক্ষক, পৌর কল্যাণ উচ্চ বিদ্যালয়, নোয়াখালী</span></p>
-
-        <p style="text-align:center"><span style="font-size:14px">অফিস: ০২৩৩৪৪৩৩৬৪৭</span></p>
-
-        <p style="text-align:center"><span style="font-size:14px">ইমেইল :info@pkhs.edu.bd</span></p>-->
-            <!--<p>
-        <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
-    </p>-->
-            <!--</div>
-
-        <style>
-            #right-content .block {
-                display: block !important
-            }
-        </style>
-
-        <div class="column block">
-            <h5 class="bk-org title">
-                অভিযোগ নিষ্পত্তি কর্মকর্তা
-            </h5>
-
-
-            <ul class="caption fade-caption" style="margin:0">
-                <li>জনাব আব্দুল করিম</li>
-                <li>কক্ষ: প্রশাসনিক ভবন, নিচতলা</li>
-                <li>ফোন: ০১৭১১-৫৬৭৮৯০</li>
-                <li>ইমেইল:pkhschool.noa@yahoo.com</li>
-            </ul>
-
-
-
-        </div>
-
-
-
-
-
-        <div class="column block">
-
-            <h5 class="bk-org title">
-
-                তথ্য সেবা কেন্দ্র
-            </h5>
-
-            <ul class="caption fade-caption" style="margin:0">
-                <li>অবস্থান: প্রধান গেট, বাম পাশ</li>
-                <li>সময়: সকাল ৮:০০ - বিকাল ৪:০০</li>
-                <li>দিন : রবিবার থেকে বৃহস্পতিবার</li>
-                <li>ফোন: ০১৮ ১৫ ৫৮ ১০ ৫৫</li>
-                <li>ইমেইল: info@pkhs.edu.bd</li>
-            </ul>
-
-        </div>
-
-
-
-        <div class="column block">
-            <h5 class="bk-org title">
-                গুরুর্তপূর্ন লিঙ্ক সমূহ
-            </h5>
-            <ul class="caption fade-caption" style="margin:0">
-
-                <!--<li><a href="http://www.forms.gov.bd/" target="_blank">ফরমস পোর্টাল</a></li>-->
-
-                <li><a href="http://www.moedu.gov.bd/" target="_blank">শিক্ষা মন্ত্রনালয়</a></li>
-
-                <li><a href="https://comillaboard.portal.gov.bd/" target="_blank">কুমিল্লা শিক্ষা বোর্ড</a></li>
-
-                <li><a href="http://www.bangladesh.gov.bd" target="_blank">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
-
-                <li><a href="http://services.portal.gov.bd/" target="_blank">সেবাকুঞ্জ</a></li>
-
-                <li><a href="http://www.bou.ac.bd/result.php" target="_blank">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় ফলাফল</a></li>
-
-                <li><a href="https://www.noakhali.gov.bd/" target="_blank">নোয়াখালী জেলা</a></li>
-            </ul>
-
-        </div>
-
-
-
-
-        <div class="column block">
-            <h5 class="bk-org title">
-                ফেইসবুক
-            </h5>
-
-            <p>
-                <a href="https://www.facebook.com/profile.php?id=100029446217767" target="_blank">
-                    <img alt="" src="images/FB.png" style="float:left; height:50px; width:220px">
-                </a>
-            </p>
-
-        </div>
-
-
-    </div>-->
         </div>
     </div>
 
@@ -1099,10 +1085,97 @@
             margin: 0 auto !important;
             text-align: center;
         }
+
+      
     </style>
 
     ﻿
 
 
 </body>
-</html> 
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Information</title>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .table-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow-x: auto; /* Makes table horizontally scrollable on small screens */
+            width: 100%;
+            max-width: 900px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* Ensures table doesn't shrink too much */
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: #4f46e5;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tr:hover {
+            background-color: #eff6ff;
+        }
+
+        td:first-child {
+            font-weight: 500;
+            color: #334155;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            th, td {
+                padding: 12px 15px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .table-container {
+                border-radius: 8px;
+            }
+
+            th, td {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>-->

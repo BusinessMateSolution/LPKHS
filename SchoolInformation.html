@@ -8,7 +8,7 @@
     <!-- Mobile Specific Metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-Frame-Options" content="deny">
+   
     <meta name="description" content="">
 
     <!-- =============== tt canonical End =============================== -->
@@ -605,7 +605,7 @@
                 background: white;
                 border-radius: 10px;
                 box-shadow: var(--shadow);
-                padding: 25px;
+                /*padding: 25px;*/
                 margin-bottom: 30px;
                 transition: transform 0.3s ease;
             }
@@ -627,7 +627,15 @@
                 gap: 50px;
                 margin: 30px 0;
             }
+            .highlight {
+                background: linear-gradient(120deg, rgba(255, 255, 0, 0.3), transparent 60%);
+                padding: 0 4px;
+                font-weight: 600;
+            }
 
+            .bengali-text {
+                font-family: 'Noto Sans Bengali', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
             .photo-item {
                 border-radius: 10px;
                 overflow: hidden;
@@ -668,7 +676,7 @@
             th {
                 background-color: #2c7be5;
                 color: white;
-                padding: 12px 15px;
+              /*  padding: 12px 15px;*/
                 text-align: center;
                 font-weight: bold;
                 position: sticky;
@@ -730,7 +738,52 @@
                         font-weight: bold;
                         color: #2c7be5;
                     }
+                .responsive-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
 
+                    .responsive-table thead {
+                        background: linear-gradient(135deg, #1a5fb4 0%, #0d47a1 100%);
+                        color: white;
+                    }
+
+                    .responsive-table th {
+                        padding: 18px 20px;
+                        text-align: left;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                    }
+
+                        .responsive-table th:first-child {
+                            border-top-left-radius: 15px;
+                        }
+
+                        .responsive-table th:last-child {
+                            border-top-right-radius: 15px;
+                        }
+
+                    .responsive-table tbody tr {
+                        border-bottom: 1px solid #e0e7ff;
+                        transition: background-color 0.2s;
+                    }
+
+                        .responsive-table tbody tr:hover {
+                            background-color: #f5f9ff;
+                        }
+
+                    .responsive-table td {
+                        padding: 16px 20px;
+                        font-size: 1.05rem;
+                    }
+
+                        .responsive-table td:first-child {
+                            font-weight: 600;
+                            color: #1a5fb4;
+                            min-width: 200px;
+                        }
                 /* Dynamic column labels for each table */
                 .class-table td:nth-of-type(1):before {
                     content: "শ্রেণি";
@@ -773,6 +826,8 @@
                 .commerce-table td:nth-of-type(6):before {
                     content: "০১:৩০-০২:৩০";
                 }
+
+
             }
         </style>
 
@@ -780,117 +835,209 @@
             <div class="twelve columns" id="left-content">
                 <div class="row mainwrapper">
 
-                    <div class="table-container">
-                        <table class="min-w-full divide-y divide-gray-200">
-                            <!--<thead class="bg-indigo-600">
+                    <div class="table-container" style="margin-top:1px">
+                        <table class="responsive-table"  >
+                            <thead>
                                 <tr>
-                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-lg">
-                                        এক নজরে স্কুল
-                                    </th>
-                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tr-lg">
-                                        Details
-                                    </th>
+                                    <th class="bengali-text" colspan="2">এক নজরে স্কুল</th>
                                 </tr>
-                            </thead>-->
-                            <div class="card" style="text-align: center">
-
-                                <h2>
-                                    এক নজরে স্কুল
-                                </h2>
-
-                            </div>
-
-                            <tbody class="bg-white divide-y divide-gray-200">
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠানের নাম</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">পৌর কল্যাণ উচ্চ বিদ্যালয়</td>
+                                    <td class="bengali-text">প্রতিষ্ঠানের নাম</td>
+                                    <td class="bengali-text">পৌর কল্যাণ উচ্চ বিদ্যালয়</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">EIIN No.</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">107538</td>
+                                    <td>EIIN No.</td>
+                                    <td>107538</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">MPO Code</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1106011305</td>
+                                    <td>MPO Code</td>
+                                    <td>1106011305</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ঠিকানা</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">মাইজদী কোর্ট, নোয়াখালী পৌরসভা, নোয়াখালী সদর, নোয়াখালী-৩৮০০</td>
+                                    <td class="bengali-text">ঠিকানা</td>
+                                    <td class="bengali-text">মাইজদী কোর্ট, নোয়াখালী পৌরসভা, নোয়াখালী সদর, নোয়াখালী-৩৮০০</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠানের ধরন</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">স্কুল</td>
+                                    <td class="bengali-text">প্রতিষ্ঠানের ধরন</td>
+                                    <td class="bengali-text">স্কুল</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">স্তর</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">মাধ্যমিক</td>
+                                    <td class="bengali-text">স্তর</td>
+                                    <td class="bengali-text">মাধ্যমিক</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">শিক্ষা কার্যক্রম</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সহ-শিক্ষা</td>
+                                    <td class="bengali-text">শিক্ষা কার্যক্রম</td>
+                                    <td class="bengali-text">সহ-শিক্ষা</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠাকাল</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১৯৪০ খ্রি.</td>
+                                    <td class="bengali-text">প্রতিষ্ঠাকাল</td>
+                                    <td class="bengali-text">১৯৪০ খ্রি.</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রথম স্বীকৃতি</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">২০-১২-১৯৪৬ খ্রি.</td>
+                                    <td class="bengali-text">প্রথম স্বীকৃতি</td>
+                                    <td class="bengali-text">২০-১২-১৯৪৬ খ্রি.</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">শেষ স্বীকৃতি</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">৩১-১২-১৯২৬ খ্রি. তারিখ পর্যন্ত</td>
+                                    <td class="bengali-text">শেষ স্বীকৃতি</td>
+                                    <td class="bengali-text">৩১-১২-১৯২৬ খ্রি. তারিখ পর্যন্ত</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">পরিচালনা</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">বেসরকারি (এমপিওভূক্ত)</td>
+                                    <td class="bengali-text">পরিচালনা</td>
+                                    <td class="bengali-text">বেসরকারি (এমপিওভূক্ত)</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">কমিটির ধরন</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ম্যানেজিং কমিটি</td>
+                                    <td class="bengali-text">কমিটির ধরন</td>
+                                    <td class="bengali-text">ম্যানেজিং কমিটি</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ভৌ. অবস্থান</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সমতল এলাকা</td>
+                                    <td class="bengali-text">ভৌ. অবস্থান</td>
+                                    <td class="bengali-text">সমতল এলাকা</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">উপজেলা দপ্তর</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১ কি.মি দূরে অবস্থিত</td>
+                                    <td class="bengali-text">উপজেলা দপ্তর</td>
+                                    <td class="bengali-text">১ কি.মি দূরে অবস্থিত</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">বিদ্যুত ব্যবস্থা</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সচল</td>
+                                    <td class="bengali-text">বিদ্যুত ব্যবস্থা</td>
+                                    <td class="bengali-text">সচল</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">পানির ব্যবস্থা</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">নোয়াখালী পৌরসভা কর্তৃক সরবরাহকৃত</td>
+                                    <td class="bengali-text">পানির ব্যবস্থা</td>
+                                    <td class="bengali-text">নোয়াখালী পৌরসভা কর্তৃক সরবরাহকৃত</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">গ্যাস সংযোগ</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সচল</td>
+                                    <td class="bengali-text">গ্যাস সংযোগ</td>
+                                    <td class="bengali-text">সচল</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">সৌচাগার</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ছাত্রদের-০৪টি, ছাত্রীদের-০৩টি, শিক্ষক-কর্মচারীদের-০২টি, প্রধান শিক্ষকের-০১টি</td>
+                                    <td class="bengali-text">সৌচাগার</td>
+                                    <td class="bengali-text">ছাত্রদের-০৪টি, ছাত্রীদের-০৩টি, শিক্ষক-কর্মচারীদের-০২টি, প্রধান শিক্ষকের-০১টি</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ভবন সংখ্যা</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">দ্বিতল ভবন-০২ টি, সেমি পাকা-০১ টি, টিনশেড-০১টি</td>
+                                    <td class="bengali-text">ভবন সংখ্যা</td>
+                                    <td class="bengali-text">দ্বিতল ভবন-০২ টি, সেমি পাকা-০১ টি, টিনশেড-০১টি</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">কক্ষ সংখ্যা</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১৫টি</td>
+                                    <td class="bengali-text">কক্ষ সংখ্যা</td>
+                                    <td class="bengali-text">১৫টি</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">হলকক্ষ</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">০১টি</td>
+                                    <td class="bengali-text">হলকক্ষ</td>
+                                    <td class="bengali-text">০১টি</td>
                                 </tr>
                                 <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">খেলার মাঠ</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">০১টি</td>
+                                    <td class="bengali-text">খেলার মাঠ</td>
+                                    <td class="bengali-text">০১টি</td>
                                 </tr>
                             </tbody>
                         </table>
+
+                        <!--<table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-indigo-600">
+            <tr>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-lg">
+                    এক নজরে স্কুল
+                </th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tr-lg">
+                    Details
+                </th>
+            </tr>
+        </thead>
+
+
+        <tbody class="bg-white divide-y divide-gray-200">
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠানের নাম</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">পৌর কল্যাণ উচ্চ বিদ্যালয়</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">EIIN No.</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">107538</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">MPO Code</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1106011305</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ঠিকানা</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">মাইজদী কোর্ট, নোয়াখালী পৌরসভা, নোয়াখালী সদর, নোয়াখালী-৩৮০০</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠানের ধরন</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">স্কুল</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">স্তর</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">মাধ্যমিক</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">শিক্ষা কার্যক্রম</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সহ-শিক্ষা</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রতিষ্ঠাকাল</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১৯৪০ খ্রি.</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">প্রথম স্বীকৃতি</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">২০-১২-১৯৪৬ খ্রি.</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">শেষ স্বীকৃতি</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">৩১-১২-১৯২৬ খ্রি. তারিখ পর্যন্ত</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">পরিচালনা</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">বেসরকারি (এমপিওভূক্ত)</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">কমিটির ধরন</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ম্যানেজিং কমিটি</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ভৌ. অবস্থান</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সমতল এলাকা</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">উপজেলা দপ্তর</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১ কি.মি দূরে অবস্থিত</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">বিদ্যুত ব্যবস্থা</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সচল</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">পানির ব্যবস্থা</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">নোয়াখালী পৌরসভা কর্তৃক সরবরাহকৃত</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">গ্যাস সংযোগ</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">সচল</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">সৌচাগার</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ছাত্রদের-০৪টি, ছাত্রীদের-০৩টি, শিক্ষক-কর্মচারীদের-০২টি, প্রধান শিক্ষকের-০১টি</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ভবন সংখ্যা</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">দ্বিতল ভবন-০২ টি, সেমি পাকা-০১ টি, টিনশেড-০১টি</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">কক্ষ সংখ্যা</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">১৫টি</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">হলকক্ষ</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">০১টি</td>
+            </tr>
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">খেলার মাঠ</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">০১টি</td>
+            </tr>
+        </tbody>
+    </table>-->
                     </div>
 
 
@@ -971,7 +1118,7 @@
                         <li>অবস্থান: কক্ষ নম্বরঃ ১০৫, পূর্বভবন, নিচতলা</li>
                         <li>সময়: সকাল ৮:০০ - বিকাল ৪:০০</li>
                         <li>দিন : রবিবার থেকে বৃহস্পতিবার</li>
-                        <li>ফোন: ০১৭১১-৪৫৬৭৮৯</li>
+                        <li>ফোন: ০১৮ ১৫ ৫৮ ১০ ৫৫</li>
                         <li>ইমেইল: pkhschool.noa@yahoo.com</li>
                     </ul>
 
@@ -985,19 +1132,19 @@
                     </h5>
                     <ul class="caption fade-caption" style="margin:0">
 
-                        <li><a href="http://www.forms.gov.bd/">ফরমস পোর্টাল</a></li>
+                        <!--<li><a href="http://www.forms.gov.bd/" target="_blank">ফরমস পোর্টাল</a></li>-->
 
-                        <li><a href="http://www.moedu.gov.bd/">শিক্ষা মন্ত্রনালয়</a></li>
+                        <li><a href="http://www.moedu.gov.bd/" target="_blank">শিক্ষা মন্ত্রনালয়</a></li>
 
-                        <li><a href="https://comillaboard.portal.gov.bd/">কুমিল্লা শিক্ষা বোর্ড</a></li>
+                        <li><a href="https://comillaboard.portal.gov.bd/" target="_blank">কুমিল্লা শিক্ষা বোর্ড</a></li>
 
-                        <li><a href="http://www.bangladesh.gov.bd">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
+                        <li><a href="http://www.bangladesh.gov.bd" target="_blank">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
 
-                        <li><a href="http://services.portal.gov.bd/">সেবাকুঞ্জ</a></li>
+                        <li><a href="http://services.portal.gov.bd/" target="_blank">সেবাকুঞ্জ</a></li>
 
-                        <li><a href="http://www.bou.ac.bd/result.php">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় ফলাফল</a></li>
+                        <li><a href="http://www.bou.ac.bd/result.php" target="_blank">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় ফলাফল</a></li>
 
-                        <li><a href="https://www.noakhali.gov.bd/">নোয়াখালী জেলা</a></li>
+                        <li><a href="https://www.noakhali.gov.bd/" target="_blank">নোয়াখালী জেলা</a></li>
                     </ul>
 
                 </div>
