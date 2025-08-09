@@ -955,8 +955,8 @@ p {
 .footer-credit ul li,
 a,
 a:visited {
- /* color: #666;
-  text-decoration: none;*/
+  color: #666;
+  text-decoration: none;
 }
 
 .footer-credit ul li a:hover {
@@ -1053,13 +1053,15 @@ a:visited {
 .footer-credit ul li,
 a,
 a:visited {
-/*  color: #666;
-  text-decoration: none;*/
+  color: #666;
+  text-decoration:none;
+ 
 }
 
-.footer-credit ul li a:hover {
-  text-decoration: underline;
-}
+    .footer-credit ul li a:hover {
+        text-decoration: underline;
+  
+    }
 
 #footer-menu {
   float: left;
