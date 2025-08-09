@@ -526,9 +526,9 @@ table {
   clear: both;
 }
 td {
-  box-sizing: border-box !important;
+  /*box-sizing: border-box !important;
   padding: 5px !important;
-  border: 1px solid #d8d8d8 !important;
+  border: 1px solid #d8d8d8 !important;*/
 }
 #contents .block {
   overflow: hidden;
