@@ -1,26 +1,26 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 </head>
-<body class="3mtJtoAx70UA.bd">
+<body>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>পৌর কল্যাণ উচ্চ বিদ্যালয়</title>
     <!-- Mobile Specific Metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+
     <meta name="description" content="">
 
     <!-- =============== tt canonical End =============================== -->
 
-    <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/base.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../themes/responsive_npf/stylesheets/base.css">
     <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/skeleton.css">
     <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/style.css">
     <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/meganizr.css">
     <link type="text/css" rel="stylesheet" media="all" href="npfadmin/public/css/flaticon/flaticon.css">
     <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/templates/ministry/style.css">
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
     <link rel="stylesheet" href="themes/responsive_npf/stylesheets/responsiveslides.css">
 
@@ -32,7 +32,7 @@
     <script src="themes/responsive_npf/js/domain_selector.js" type="text/javascript"></script>
     <script src="themes/responsive_npf/js/utils.js" type="text/javascript"></script>
     <script type="text/javascript" src="themes/responsive_npf/js/yoxview/yoxview-init.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
     <script>
@@ -90,42 +90,208 @@
 
 
         <style>
-            .logo img {
-                height: 70px;
-                margin-right: 15px;
-                border-radius: 50%;
-                background-color: white;
-                padding: 5px;
+            /* .logo img {
+                            height: 50px;
+                            margin-right: 15px;
+                            border-radius: 50%;
+                            background-color: white;
+                            padding: 5px;
+                        }
+            */
+            .marquee-container {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                position: relative;
+                margin: 20px 0;
+            }
+
+            .marquee {
+                display: inline-block;
+                animation: scroll 20s linear infinite;
+            }
+
+                .marquee:hover {
+                    animation-play-state: paused;
+                }
+
+                .marquee img {
+                    height: 200px;
+                    margin-right: 15px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                    transition: transform 0.3s;
+                }
+
+                    .marquee img:hover {
+                        transform: scale(1.05);
+                    }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .marquee img {
+                    height: 150px;
+                    margin-right: 10px;
+                }
+
+                .marquee {
+                    animation: scroll 15s linear infinite;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .marquee img {
+                    height: 120px;
+                    margin-right: 8px;
+                }
             }
         </style>
         <style>
             .founded {
-                position: absolute;
+                position: relative;
                 /* top: 50px;*/
-                right: 2px;
+                right: -310px;
                 /*  background-color: white;*/
                 /* background: rgba(0,0,0,0.5);*/
                 padding: 8px 15px;
                 border-radius: 10px;
                 font-size: 0.9rem;
             }
-        </style>
 
+            .responsive-table {
+                max-width: 900px;
+                /* background-color: #cce5a1;*/
+                border-collapse: collapse;
+                width: 100%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+                .responsive-table td {
+                    /*padding: 3px;*/
+                    vertical-align: top;
+                    border-style: none;
+                    color: white;
+                    font-size: 16px;
+                    /* border-color: green*/;
+                    /* text-align:left;*/
+                }
+
+            .school-logo {
+                /*  width: 100px;*/
+                height: 130px
+            }
+
+            .school-name {
+                text-align: left;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .school-address {
+                text-align: center;
+                font-size: 16px;
+                vertical-align: middle;
+            }
+
+            .info-label {
+                font-weight: bold;
+                white-space: nowrap;
+            }
+        </style>
         <div id="site-info" class="clearfix">
             <div class="site-info-container">
-                <div id="sitelogo">
-                    <div class="logo">
-                        <img src="images/PKHS-Logo.jpg" alt="পৌর কল্যাণ উচ্চ বিদ্যালয় লোগো">
-                    </div>
-                </div>
 
-                <div class="clearfix" id="sitename-wrapper">
-                    <span id="site-name"><a title="Home" href="/">পৌর কল্যাণ উচ্চ বিদ্যালয়</a></span>
-                    <span id="slogan">জ্ঞানের আলোয় আলোকিত জীবন গড়ি</span>
-                    <span class="founded">প্রতিষ্ঠা: ১৯৪০ সাল</span>
-                </div>
+                <table class="responsive-table">
+                    <tr>
+                        <td rowspan="3">
+
+                            <img src="images/PKHS-Logo.jpg" alt="School Logo" class="school-logo" style="background-color:aquamarine;border-radius:5px">
+
+                        </td>
+                        <td colspan="3" class="school-name">
+
+                            <h1 style="text-align: left; color: white; font-size: 45px">পৌর কল্যাণ উচ্চ বিদ্যালয়</h1>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="school-address">
+                            <p style="font-size:20px"> মাইজদী কোর্ট, নোয়াখালী সদর, নোয়াখালী</p>
+                            <p style="font-size:20px"> প্রতিষ্ঠাকাল   :-   ১৯৪০ খ্রি.</p>
+                            <p style="text-align: center; font-style: italic; font-size: 20px">  জ্ঞানের আলোয় জীবন গড়ি</p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>EIIN No.   :-   107538</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td style="text-align: left;">Phone No.   :-   107538</td>
+                    </tr>
+                    <tr>
+                        <td>School Code   :-   6003</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td style="text-align: left;">Mobile No. :-  01933663455</td>
+                    </tr>
+                    <tr>
+                        <td>MPO Code   :-   1106011305</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td style="text-align: left;">E-mail Address   :-   pkhschool.noa@yahoo.com</td>
+                    </tr>
+                </table>
             </div>
         </div>
+
+
+
+
+        <!--<div id="site-info" class="clearfix">
+        <div class="site-info-container">
+            <div id="sitelogo">
+                <div class="logo">
+                    <img src="images/PKHS-Logo.jpg" alt="School Logo" class="school-logo" style="background-color:aquamarine;border-radius:5px">-->
+        <!--<img src="images/PKHS-Logo.jpg" alt="পৌর কল্যাণ উচ্চ বিদ্যালয় লোগো">-->
+        <!--</div>
+        </div>
+
+        <div class="clearfix" id="sitename-wrapper">-->
+        <!--<span id="site-name"><a title="Home" href="/">পৌর কল্যাণ উচ্চ বিদ্যালয়</a></span>-->
+        <!--<p style="text-align: left; color: white; padding: 20px 0; font-size: 70px; font-weight: bold; margin-top: -40px;">পৌর কল্যাণ উচ্চ বিদ্যালয়</p>
+        <p style="font-size: 20px; margin-top: -40px; text-align: center"> মাইঝদী কোর্ট, নোয়াখালী সদর, নোয়াখালী</p>
+        <p style="font-size:20px"> প্রতিষ্ঠাকাল  :- ১৯৪০ খ্রি.</p>-->
+        <!--<span id="slogan">জ্ঞানের আলোয় আলোকিত জীবন গড়ি</span>-->
+        <!--<p style="text-align: right; font-style: italic; font-size: 20px;margin-right:60px">  জ্ঞানের আলোয় জীবন গড়ি</p>-->
+        <!--<span class="founded">প্রতিষ্ঠা: ১৯৪০ সাল</span>-->
+        <!--</div>
+            </div>
+        </div>-->
+
+
+
+
+
         <style>
             /* Base styles */
             #site-info {
@@ -254,7 +420,7 @@
             <div class="sixteen columns menu">
 
                 <a href="javascript:;" class="show-menu menu-head"> মেনু নির্বাচন করুন</a>
-                <div role="navigation" id="dawgdrops">
+                <div role="navigation" id="dawgdrops" style="background-color:blue">
                     <ul class="meganizr mzr-slide mzr-responsive">
 
                         <li class="col0 "><a title="Home" href="/" style="background-image: url(themes/responsive_npf/img/home_dark.png);margin-top:5px;"></a></li>
@@ -348,20 +514,21 @@
             }
 
             /* #site-name {
-                font-size: 80px;
-                margin-left: -100px;
-                margin-top: -30px;
-            }
+                        font-size: 80px;
+                        margin-left: -100px;
+                        margin-top: -30px;
+                    }
 
-            #slogan {
-                display: block;
-                margin-left: 312px;
-                margin-top: -30px;
-            }*/
+                    #slogan {
+                        display: block;
+                        margin-left: 312px;
+                        margin-top: -30px;
+                    }*/
 
             #sitelogo {
                 width: 20%;
-                float: left
+                float: left;
+                /*  margin-top: -90px;*/
             }
 
             #sitename-wrapper {
@@ -577,8 +744,8 @@
 
                 .right-side-bar .block ul li a {
                     /*    border-bottom: 1px solid transparent;
-                    border-image: linear-gradient(to right,#683091 0%, #8bc643 100%);
-                    border-image-slice: 1*/
+                            border-image: linear-gradient(to right,#683091 0%, #8bc643 100%);
+                            border-image-slice: 1*/
                     font-size: 14px !important
                 }
 
@@ -587,70 +754,41 @@
             }
         </style>
 
+
+
+
         <style>
 
-            @media (max-width: 760px) {
-                .responsive-school-img {
-                    max-width: 100%;
-                }
+            #notice-board-ticker .btn, #news-ticker .btn {
+                color: #fff;
             }
 
 
-
-
-
-
-            .card {
-                background: white;
-                border-radius: 10px;
-                box-shadow: var(--shadow);
-                /*padding: 25px;*/
-                margin-bottom: 30px;
-                transition: transform 0.3s ease;
-            }
-
-                .card:hover {
-                    transform: translateY(-5px);
+            @media screen and (max-width: 479px) {
+                .notice-board-bg {
+                    padding: 0px 0px 20px 10px;
                 }
 
-                .card h3 {
-                    color: var(--primary);
-                    margin-bottom: 15px;
-                    padding-bottom: 10px;
-                    border-bottom: 2px solid var(--light);
+                ul li {
+                    margin: 2px 0 0 20px;
+                    font-size: 1.2em;
+                    list-style-image: url("../../images/bullet_arrow.png");
                 }
 
-            .school-photos {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 50px;
-                margin: 30px 0;
-            }
-
-            .photo-item {
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                height: 250px;
-                width: 350px;
-                background-color: #e0e0e0;
-                display: block;
-                align-items: baseline;
-                justify-content: center;
-                color: #666;
-                font-weight: bold;
+                .dynamic_serivce_box box {
+                }
             }
         </style>
 
-        <style>
-            h2 {
-                color: #2c7be5;
-                margin-top: 30px;
-                border-bottom: 2px solid #2c7be5;
-                padding-bottom: 5px;
-            }
 
-            .table-container {
+        <style>
+
+
+
+
+
+
+            .responsive-table2 {
                 width: 100%;
                 overflow-x: auto;
                 margin: 20px 0;
@@ -664,10 +802,10 @@
                 min-width: 600px;
             }
 
-            th {
-                background-color: #2c7be5;
+            .responsive-table2 th {
+                background-color: #1a5fb4; /* Blue header background */
                 color: white;
-                padding: 10px;
+                padding: 5px;
                 text-align: center;
                 font-weight: bold;
                 position: sticky;
@@ -675,18 +813,17 @@
                 border: 1px solid #070707
             }
 
-            td {
-                padding: 10px;
+            .responsive-table2 td {
+                padding: 5px;
                 text-align: center;
-                border: 1px solid #070707;
-                vertical-align: middle
+                border: 1px solid #070707
             }
 
-            tr:nth-child(even) {
+            .responsive-table2 tr:nth-child(even) {
                 background-color: #f8f9fa;
             }
 
-            tr:hover {
+            .responsive-table2 tr:hover {
                 background-color: #e9ecef;
             }
 
@@ -713,11 +850,10 @@
                 }
 
                 td {
-                    border: none;
-                    border-bottom: 1px solid #eee;
+                    border: 1px solid Black;
                     position: relative;
                     padding-left: 50%;
-                    text-align: right;
+                    text-align: left;
                 }
 
                     td:before {
@@ -728,66 +864,40 @@
                         white-space: nowrap;
                         text-align: left;
                         font-weight: bold;
-                        color: #2c7be5;
+                        color: #1a5fb4; /* Blue color matching header */
                     }
 
-                /* Dynamic column labels for each table */
-                .class-table td:nth-of-type(1):before {
-                    content: "শ্রেণি";
-                }
+                    td:nth-of-type(1):before {
+                        content: "শ্রেণি";
+                    }
 
-                .class-table td:nth-of-type(2):before {
-                    content: "অনুমোদিত শাখা";
-                }
+                    td:nth-of-type(2):before {
+                        content: "মোট শিক্ষার্থী";
+                    }
 
-                .class-table td:nth-of-type(3):before {
-                    content: "বিষয়সমূহ";
-                }
+                    td:nth-of-type(3):before {
+                        content: "ছাত্র";
+                    }
 
-                .science-table td:nth-of-type(1):before,
-                .commerce-table td:nth-of-type(1):before {
-                    content: "দিন";
-                }
-
-                .science-table td:nth-of-type(2):before,
-                .commerce-table td:nth-of-type(2):before {
-                    content: "০৮:৩০-০৯:৩০";
-                }
-
-                .science-table td:nth-of-type(3):before,
-                .commerce-table td:nth-of-type(3):before {
-                    content: "০৯:৩০-১০:৩০";
-                }
-
-                .science-table td:nth-of-type(4):before,
-                .commerce-table td:nth-of-type(4):before {
-                    content: "১০:৪৫-১১:৪৫";
-                }
-
-                .science-table td:nth-of-type(5):before,
-                .commerce-table td:nth-of-type(5):before {
-                    content: "১১:৪৫-১২:৪৫";
-                }
-
-                .science-table td:nth-of-type(6):before,
-                .commerce-table td:nth-of-type(6):before {
-                    content: "০১:৩০-০২:৩০";
-                }
+                    td:nth-of-type(4):before {
+                        content: "ছাত্রী";
+                    }
             }
         </style>
 
         <div id="contents" class="sixteen columns">
             <div class="twelve columns" id="left-content">
+
                 <div class="row mainwrapper">
 
                     <!--<div class="card" style="text-align: center;">-->
 
-                    
 
-                        <h4 class="bk-org title" style="padding-bottom:8px; text-align: center;">
 
-                            পাঠদান সংক্রান্ত তথ্য
-                        </h4>
+                    <h4 class="bk-org title" style="padding-bottom:8px; text-align: center;">
+
+                        পাঠদান সংক্রান্ত তথ্য
+                    </h4>
 
 
                     <!--</div>-->
@@ -798,7 +908,7 @@
                         <h3 style="text-decoration: underline;">শ্রেণিভিত্তিক শাখাসমূহের তথ্য</h3>
                         <p>বিদ্যালয়ে ৬ষ্ঠ থেকে ১০ম শ্রেণি পর্যন্ত সহশিক্ষা (ছাত্র-ছাত্রীদের ভিন্ন ভিন্ন) ব্যবস্থা চালু রয়েছে:</p>
 
-                        <table class="class-table styled-table">
+                        <table class="responsive-table2">
                             <thead>
                                 <tr>
                                     <th>শ্রেণি</th>
@@ -808,12 +918,12 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>ষষ্ঠ-অষ্টম</td>
+                                    <td  style="vertical-align:middle">ষষ্ঠ-অষ্টম</td>
                                     <td>প্রতি শ্রেণির মূল শ্রেণি শাখা ও অতিরিক্ত দুটি করে শাখা রয়েছে।</td>
                                     <td>জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান</td>
                                 </tr>
                                 <tr>
-                                    <td rowspan="3" style="width:80px">নবম-দশম</td>
+                                    <td rowspan="3"  style="vertical-align:middle;width:90px">নবম-দশম</td>
                                     <td>বিজ্ঞান</td>
                                     <td> জাতীয় পাঠ্যপুস্তক বোর্ড, বাংলাদেশ কর্তৃক প্রণীত পাঠ্যক্রম অনুযায়ী পাঠদান </td>
                                 </tr>
@@ -830,7 +940,7 @@
                     </div>
 
                     <div class="card" style="text-align:justify">
-                     
+
                         <h3>পাঠ্যক্রম</h3>
                         <p>আমরা জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (এনসিটিবি) কর্তৃক অনুমোদিত জাতীয় শিক্ষাক্রম অনুসরণে অতিরিক্ত বিষয়সমূহ:</p>
                         <ul>
@@ -867,7 +977,7 @@
 
 
                 </div>
-            
+
             </div>
             <div class="four columns right-side-bar" id="right-content">
 
@@ -956,7 +1066,7 @@
                     </h5>
                     <ul class="caption fade-caption" style="margin:0">
 
-                        
+
 
                         <li><a href="http://www.moedu.gov.bd/" target="_blank">শিক্ষা মন্ত্রনালয়</a></li>
 
@@ -991,7 +1101,189 @@
 
 
             </div>
-            
+
+            <style>
+
+                @media (max-width: 760px) {
+                    .responsive-school-img {
+                        max-width: 100%;
+                    }
+                }
+
+                .card {
+                    background: white;
+                    border-radius: 10px;
+                    box-shadow: var(--shadow);
+                    /*padding: 25px;*/
+                    margin-bottom: 30px;
+                    transition: transform 0.3s ease;
+                }
+
+                    .card:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    .card h3 {
+                        color: var(--primary);
+                        margin-bottom: 15px;
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid var(--light);
+                    }
+
+                .school-photos {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    gap: 50px;
+                    margin: 30px 0;
+                }
+
+                .photo-item {
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                    height: 250px;
+                    width: 350px;
+                    background-color: #e0e0e0;
+                    display: block;
+                    align-items: baseline;
+                    justify-content: center;
+                    color: #666;
+                    font-weight: bold;
+                }
+
+                /* Table Styles */
+
+                .bangla {
+                    /* font-family: 'SolaimanLipi', Arial, sans-serif;
+                font-size: 13px;*/
+                    font-family: 'SolaimanLipi', 'Siyam Rupali', Arial, sans-serif;
+                    margin: 20px;
+                    line-height: 1.6;
+                }
+            </style>
+            <!--<div class="four columns right-side-bar" id="right-content">
+            <div class="column block">
+                <h5 class="bk-org title">
+                    চেয়ারম্যান
+                </h5>
+
+                <h3 style="text-align:center"><img alt="" src="images/CM.jpg" style="height:250px; width:205px"></h3>
+
+                <h3 style="text-align:center"><span style="font-size:14px">মুহাম্মদ ঈসমাঈল</span></h3>
+
+                <p style="text-align:center"><span style="font-size:14px">অতিরিক্ত জেলা প্রশাসক(সার্বিক), নোয়াখালী</span></p>
+
+                <p style="text-align:center"><span style="font-size:14px">ফোন : ০১৭০৫-৪০১০০১</span></p>
+
+                <p style="text-align:center"><span style="font-size:14px">ইমেইল :pkhschool.noa@yahoo.com</span></p>-->
+            <!--<p>
+                <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
+            </p>-->
+            <!--</div>
+            <div class="column block">
+                <h5 class="bk-org title">
+                    প্রধান শিক্ষক
+                </h5>
+                <h3 style="text-align:center"><img alt="" src="images/HT.jpg" style="height:250px; width:205px"></h3>
+
+                <h3 style="text-align:center"><span style="font-size:14px">জনাব কামাল উদ্দিন</span></h3>
+
+                <p style="text-align:center"><span style="font-size:14px">প্রধান শিক্ষক, পৌর কল্যাণ উচ্চ বিদ্যালয়, নোয়াখালী</span></p>
+
+                <p style="text-align:center"><span style="font-size:14px">অফিস: ০২৩৩৪৪৩৩৬৪৭</span></p>
+
+                <p style="text-align:center"><span style="font-size:14px">ইমেইল :info@pkhs.edu.bd</span></p>-->
+            <!--<p>
+                <a href="/site/biography/a95b4073-68b6-4e98-8193-08c4795e6a9e/35#" class="btn" style="display:block;text-align:center;width:100%;">বিস্তারিত</a>
+            </p>-->
+            <!--</div>
+                        <style>
+                            #right-content .block {
+                                display: block !important
+                            }
+                        </style>
+
+                        <div class="column block">
+                            <h5 class="bk-org title">
+                                অভিযোগ নিষ্পত্তি কর্মকর্তা
+                            </h5>
+
+
+                            <ul class="caption fade-caption" style="margin:0">
+                                <li>জনাব আব্দুল করিম</li>
+                                <li>কক্ষ: প্রশাসনিক ভবন, নিচতলা</li>
+                                <li>ফোন: ০১৭১১-৫৬৭৮৯০</li>
+                                <li>ইমেইল:pkhschool.noa@yahoo.com</li>
+                            </ul>
+
+
+
+                        </div>
+
+
+
+
+
+                        <div class="column block">
+
+                            <h5 class="bk-org title">
+
+                                তথ্য সেবা কেন্দ্র
+                            </h5>
+
+                            <ul class="caption fade-caption" style="margin:0">
+                                <li>অবস্থান: প্রধান গেট, বাম পাশ</li>
+                                <li>সময়: সকাল ৮:০০ - বিকাল ৪:০০</li>
+                                <li>দিন : রবিবার থেকে বৃহস্পতিবার</li>
+                                <li>ফোন: ০১৮ ১৫ ৫৮ ১০ ৫৫</li>
+                                <li>ইমেইল: info@pkhs.edu.bd</li>
+                            </ul>
+
+                        </div>
+
+
+
+                        <div class="column block">
+                            <h5 class="bk-org title">
+                                গুরুর্তপূর্ন লিঙ্ক সমূহ
+                            </h5>
+                            <ul class="caption fade-caption" style="margin:0">
+
+
+
+                    <li><a href="http://www.moedu.gov.bd/" target="_blank">শিক্ষা মন্ত্রনালয়</a></li>
+
+                    <li><a href="https://comillaboard.portal.gov.bd/" target="_blank">কুমিল্লা শিক্ষা বোর্ড</a></li>
+
+                    <li><a href="http://www.bangladesh.gov.bd" target="_blank">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
+
+                    <li><a href="http://services.portal.gov.bd/" target="_blank">সেবাকুঞ্জ</a></li>
+
+                    <li><a href="http://www.bou.ac.bd/result.php" target="_blank">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় ফলাফল</a></li>
+
+                    <li><a href="https://www.noakhali.gov.bd/" target="_blank">নোয়াখালী জেলা</a></li>
+                    </ul>
+
+                </div>
+
+
+
+
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        ফেইসবুক
+                    </h5>
+
+                    <p>
+                        <a href="https://www.facebook.com/profile.php?id=100029446217767" target="_blank">
+                            <img alt="" src="images/FB.png" style="float:left; height:50px; width:220px">
+                        </a>
+                    </p>
+
+                </div>
+
+
+            </div>-->
         </div>
     </div>
 
@@ -1050,4 +1342,4 @@
 
 
 </body>
-</html> 
+</html>
